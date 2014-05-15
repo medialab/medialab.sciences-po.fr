@@ -121,7 +121,7 @@ get_header(); ?>
 		$n_elements_by_column = 5;
 		foreach( $columns as $key=>$label ) : ?>
 			<div class="column-content">
-				<h2><a href="/<?php echo $label; ?>/"><?php echo $label ?></a></h2>
+				<h2><a href="<?php echo get_site_url()."/".$key; ?>/"><?php echo $label ?></a></h2>
 				<?php if ($key === "tools") :
 					foreach (get_tools_short_list($n_elements_by_column) as $tool) : 
 						$json = get_tool_metas($tool);
