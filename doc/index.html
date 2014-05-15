@@ -1,0 +1,211 @@
+<!DOcTYPE html>
+<html>
+<head>
+	<title>DOCUMENTATION MEDIALABS WEBSITE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+</head>
+</body>
+<!-- <div id="to-top">
+	<a href="#top">BACK TO TOP</a>
+</div> -->
+<div id="nav">
+	<h3>SUMMARY</h3>
+
+	<ul>
+		<li><a href="#1">1.LOGIN</a></li>
+		<li><a href="#2">2.HIGHLIGHTED POSTS</a>
+			<ul>
+				<li><a href="#2.1">2.1.ADD A POST AND CHOOSE ITS PLACE</a>
+					<ul>
+						<li><a href="#2.1.1">2.1.1 ADD A VIDEO AS A BACKGROUND INTO THE EDITORIAL ZONE (ZONE 1 ONLY)</a></li>
+					</ul>
+				</li>
+				<li><a href="#2.2">2.2.DELETE A POST</a></li>
+			</ul>
+		</li>
+		<li><a href="#3">3.TOOLS / PEOPLE / PROJECTS / R&amp;D POSTS</a>
+			<ul>
+				<li><a href="#3.1">3.1.ADD A POST AND LINK IT TO A TAXONOMY</a>
+					<ul>
+						<li><a href="#3.1.1">3.1.1 EDIT YOUR CUSTOM POST</a></li>
+						<li><a href="#3.1.2">3.1.2 CREATE A TAXONOMY TO LINK POST OBJECTS</a></li>
+					</ul>
+				</li>
+				<li><a href="#3.2">3.2.SPECIFIC ACTIONS ON CUSTOM POSTS</a>
+					<ul>
+						<li><a href="#3.2.1">3.2.1 ALL CUSTOM POSTS</a></li>
+						<li><a href="#3.2.2">3.2.2 TOOL POSTS</a></li>
+						<li><a href="#3.2.3">3.2.3 PEOPLE POSTS</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#4">4.MENUS</a></li>
+		<li><a href="#5">5.CREATE/EDIT A STATIC PAGE</a></li>
+		<li><a href="#6">6.MISC</a>
+			<ul>
+				<li><a href="#6.1">6.1.ADD A VIDEO TO A POST/PAGE</a></li>
+				<li><a href="#6.2">6.2 EDIT HTML/CSS/PHP TEMPLATES</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div id="content">
+	<h1 id="top">DOCUMENTATION</h1>
+
+	<h2 id="1">1. LOGIN</h2>
+
+	<p>To login use the link "Admin" in the websites footer or follow this url <a href="http://medialab-dev.sciences-po.fr/wp-admin">http://medialab-dev.sciences-po.fr/wp-admin</a> </p>
+
+	<p>Once you are on the login page, you can use either :
+	The super admin login: adminscpo - medialab2012
+	Your LDAP login
+	Your wordpress login</p>
+
+	<p>And now, welcome on the wordpress dashboard!</p>
+
+	<h2 id="2">2. HIGHLIGHTED POSTS</h2>
+
+	<p>The higlighted posts are displayed into what we call the "Editorial Zone".
+	There are 3 levels of importance.</p>
+
+	<h3 id="2.1">2.1 ADD A POST AND CHOOSE ITS PLACE</h3>
+
+	<p>To add a post in what we call the "Editorial zone", on your dashboard, click on <strong>Posts</strong> then click on <strong>Add new</strong>
+	Now you can edit your new post.</p>
+
+	<p>Fill the <strong>Title</strong> , <strong>Content</strong> and <strong>Excerpt</strong> fields with your content</p>
+
+	<p>Look for the block named <strong>Custom fields</strong> , select <strong>Subtitle</strong> in the dropdown box and in the field right next to this box, put your subtitle (This is what will be displayed as a h3 markup into the Editorial Zone) <strong>don't click on Add Custom field</strong></p>
+
+	<p>Find the block <strong>Categories</strong> and select the level of importance of your post :</p>
+
+	<ul>
+	<li><p>Zone Edito // level 1 = Biggest box of the editorial zone</p></li>
+	<li><p>Zone Edito // level 2 = Medium sized box of the editorial zone</p></li>
+	<li><p>Zone Edito // level 3 = Smallest box of the editorial zone
+	<strong>Be sure to have checked only one category</strong></p></li>
+	</ul>
+
+	<p>Now find the block named <strong>Featured image</strong> and click on <strong>Add featured image</strong> , in the popup box click on <strong>Select files</strong> and select your image, in the new window in the box, click on <strong>Use as featured image</strong> then close the window.</p>
+
+	<p>Now click on <strong>Publish</strong> </p>
+
+	<h4 id="2.1.1">2.1.1 ADD A VIDEO AS A BACKGROUND INTO THE EDITORIAL ZONE (ZONE 1 ONLY)</h4>
+
+	<p>To add a video, just use the custom field named <strong>post_video</strong> and paste the embed code you picked up on vimeo.</p>
+
+	<p>Then click on <strong>Publish</strong></p>
+
+	<p>WELL DONE YOU JUST ADDED A POST INTO THE EDITORIAL ZONE !</p>
+
+	<h3 id="2.2">2.2 REMOVE A POST FROM A ZONE</h3>
+
+	<p>To remove a post from a zone, simply display the list of all posts by clicking on <strong>Posts</strong> in the sidebar menu of WP, select the wanted post and click on <strong>Quick edit</strong>, change the status by clicking on <strong>Draft</strong>.
+	The post will not be published anymore and won't appear into the zone but you can still modify it.</p>
+
+	<h2 id="3">3. TOOLS/PEOPLE/PROJECTS/R&amp;D POSTS</h2>
+
+	<p>This type of posts are custom post types, you create an post which is an object and you link it with a taxonomy.
+	For example: Create a Project object and link it with a Person and/or a Tool.</p>
+
+	<h3 id="3.1">3.1.ADD A POST AND LINK IT TO A TAXONOMY</h3>
+
+	<p>Choose the type of post you want to create in the wordpress menu on your left.</p>
+
+	<p>For example:
+	To create a <strong>Project</strong> Post, click on <strong>Project</strong> then, click on <strong>Add projet</strong>
+	Now you can edit your new project.</p>
+
+	<h4 id="3.1.1">3.1.1 EDIT YOUR CUSTOM POST</h4>
+
+	<p>Choose the type of post you want to create in the wordpress menu on your left.</p>
+
+	<p>To create a <strong>Project</strong> Post, click on <strong>Project</strong> then, click on <strong>Add projet</strong>
+	Now you can edit your new project.</p>
+
+	<p>Fill the <strong>Title</strong> , <strong>Content</strong> and <strong>Excerpt</strong> fields with your content</p>
+
+	<p><strong>IF YOU ARE CREATING A TOOL POST</strong> find the <strong>Custom Field</strong> block and select <strong>tool id</strong> and enter the title of the tool <strong>in lowercase without spaces</strong></p>
+
+	<p>Now find the block named <strong>Featured image</strong> and click on <strong>Add featured image</strong> , in the popup box click on <strong>Select files</strong> and select your image, in the new window in the box, click on <strong>Use as featured image</strong> then close the window.</p>
+
+	<p>To <strong>link your project with a person</strong>, find the block <strong>People</strong> on your left and start typing the name of the related people.</p>
+
+	<p><strong>Creating a People post ?</strong> Take a look on what <a href="#3.2.3">custom fields</a> you need to fill.</p>
+
+	<h4 id="3.1.2">3.1.2 CREATE A TAXONOMY TO LINK POST OBJECTS</h4>
+
+	<p>In the wordpress menu, once you clicked on a custom post (for example: Project), just below there is other vocabularies (People, RandD), these vocabularies are ment to be linked to a project post, it is what you see in the sidebar on the website.</p>
+
+	<p>You already know how to link some of these vocables to a post, but if you want to create more vocables into (People or RandD) here is how to do it:</p>
+
+	<p><strong>I want to create a new person to link him/her with my new project post.</strong></p>
+
+	<p>Once my post is written (even as a draft), I go to the sub-section of the <strong>Project menu</strong> and I click on <strong>People</strong>. A list appears with all the names on the right and textfields on the left.</p>
+
+	<p>To create a new Person, I just need to fill the textfields <strong>Name</strong>, <strong>Slug</strong> and <strong>Description</strong></p>
+
+	<p>Then I click on <strong>Add Person</strong></p>
+
+	<p>Now you can return on your project post and link it with your new person.</p>
+
+	<p>And now click on <strong>Publish</strong> .</p>
+
+	<p>CONGRATS YOU JUST CREATED A NEW CUSTOM POST</p>
+
+	<h3 id="3.2">3.2.SPECIFIC ACTIONS ON CUSTOM POSTS</h3>
+
+	<h4 id="3.2.1">3.2.1 ALL CUSTOM POSTS</h4>
+
+	<p>In all custom posts you can fill the custom fields named <strong>date debut</strong> et <strong>date fin</strong>, it is used to sort objects into the pages.
+	For example, in the People page, people are sorted by descending order using the value or <strong>date fin</strong> as a reference. If <strong>date fin</strong> of a person named X is further in time than a person named Y, Mr. X will appear first.</p>
+
+	<h4 id="3.2.2">3.2.2 TOOL POSTS</h4>
+
+	<p>The tools posts are a little bit different than the other custom posts, it calls datas from an external json file.</p>
+
+	<p>To create a tool post, fill the <strong>Title</strong> field and fill the <strong>Tool id</strong> custom field with the name of the directory containing the json file.
+	(http://lrrr.medialab.sciences-po.fr/tools/NAME OF THE DIRECTORY), it will look for the meta.json file supposed to be contained in the directory.</p>
+
+	<h4 id="3.2.3">3.2.3 PEOPLE POSTS</h4>
+
+	<p><strong>UPDATE : </strong> The date_debut et date_fin fields are no longer required. To specify whether a person is currently working or not, just fill the <strong>active</strong> textfield. If the person is active then enter <strong>1</strong> in the <strong>value</strong> field, if he or her is not active anymore then enter <strong>0</strong> in the <strong>value</strong> field.</p>
+
+	<h2 id="4">4. MENUS</h2>
+
+	<p>In this website, you have two menus (the main navigation on top of the page, and the footer navigation).
+	In order to Edit these menus, you have to click on <strong>Appearance</strong> > <strong>Menus</strong> in the wordpress menu.</p>
+
+	<p>On the left of the screen is everything to can add to your menus: Static Pages, Links to an external URL, Links to posts or custom posts.
+	On the right of the screen are the menus. Each menu is in a tab on top of the box, to edit one menu in particular, just click on the wanted tab.</p>
+
+	<p>Once you edited your menu click on <strong>Save Menu</strong>, be careful it only saves the current tab, if you edited the other menu you have to click on its tab and click on <strong>Save Menu</strong> again.</p>
+
+	<h2>5.CREATE/EDIT A STATIC PAGE</h2>
+
+	<p>To create or edit a static page, just click on <strong>Pages</strong> in the wordpress menu.</p>
+
+	<p>In the list <strong>DON'T TOUCH THE "TOOLS", "PROJECTS", "PEOPLE" and "RandD" pages</strong>. You can edit the other pages and create new ones.
+	Just fill the fields <strong>Title</strong> and <strong>Content</strong>, you can add pretty much any code (google maps, video...) into the Content section.
+	You can also add a <strong>Featured image</strong></p>
+
+	<h2 id="6">6.MISC</h2>
+
+	<h3 id="6.1">6.1.ADD A VIDEO TO A POST/PAGE</h3>
+
+	<p>To add a video to a post just paste this following code anywhere in the <strong>Content section</strong> of a page or a post:</p>
+
+	<blockquote>
+	  <p>[ylwm_vimeo]THE ID OF THE VIDEO[/ylwm_vimeo].</p> 
+	  <p>You can also add optional parameters to your video:</p>
+	  <p>[ylwm_vimeo height="400" width="600" class="MyCustomClass"]20689704[/ylwm_vimeo]</p>
+	</blockquote>
+
+	<h3 id="6.2">6.2 EDIT HTML/CSS/PHP TEMPLATES</h3>
+
+	<p>To edit the HTML/CSS/PHP pages, click on <strong>Appearance</strong> then <em>Editor</em>_ in the wordpress menu. Edit the page and click on <strong>Save Changes</strong></p>
+</div>
+</body>
+</html>

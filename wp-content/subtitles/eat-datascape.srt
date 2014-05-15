@@ -1,0 +1,531 @@
+1
+00:00:21,500 --> 00:00:24,000
+Experiments in Art and Technology or E.A.T.
+
+2
+00:00:24,000 --> 00:00:25,500
+is an organization created by
+
+3
+00:00:25,500 --> 00:00:28,000
+two artists and two engineers 
+
+4
+00:00:28,000 --> 00:00:30,000
+with the aim of facilitating collaboration
+
+5
+00:00:30,000 --> 00:00:32,000
+between these two worlds. 
+
+6
+00:00:32,000 --> 00:00:35,000
+Although many documents exist, 
+
+7
+00:00:35,000 --> 00:00:37,000
+it may be difficult for the researcher 
+
+8
+00:00:37,000 --> 00:00:38,500
+to accurately represent 
+
+9
+00:00:38,500 --> 00:00:41,000
+both the activities of the organization 
+
+10
+00:00:41,000 --> 00:00:44,000
+and the particular roles of participants in the project.
+
+11
+00:00:46,000 --> 00:00:48,000
+That is why we designed 
+
+12
+00:00:48,000 --> 00:00:50,000
+what we call a datascape.
+
+13
+00:01:03,000 --> 00:01:05,000
+The EAT archives consist of diverse documents: 
+
+14
+00:01:05,000 --> 00:01:08,000
+exhibition catalogs, like these, 
+
+15
+00:01:10,000 --> 00:01:13,000
+publications, photographs, 
+
+16
+00:01:13,000 --> 00:01:16,000
+even this blue perforated card 
+
+17
+00:01:16,000 --> 00:01:19,000
+with information on engineers and their specialities 
+
+18
+00:01:19,000 --> 00:01:22,000
+which allowed artists and engineers
+
+19
+00:01:22,000 --> 00:01:24,000
+to be put in touch with each other.
+
+20
+00:01:32,000 --> 00:01:33,000
+The challenge here is to manage 
+
+21
+00:01:33,000 --> 00:01:35,000
+large amounts of data. 
+
+22
+00:01:35,000 --> 00:01:37,000
+That is why, with the Sciences Po Médialab 
+
+23
+00:01:37,000 --> 00:01:40,000
+a methodology laboratory for digital research 
+
+24
+00:01:40,000 --> 00:01:42,000
+in the humanities 
+
+25
+00:01:42,000 --> 00:01:45,500
+we designed what we call a datascape. 
+
+26
+00:01:46,000 --> 00:01:48,000
+The datascape is a piece of software 
+
+27
+00:01:48,000 --> 00:01:51,000
+that allows the researcher to explore the archives
+
+28
+00:01:51,000 --> 00:01:54,500
+via a series of interactive visualizations.
+
+29
+00:01:55,000 --> 00:01:58,000
+Factual information (who? what? when? where?)
+
+30
+00:01:58,000 --> 00:02:00,000
+must be extracted from the document. 
+
+31
+00:02:00,000 --> 00:02:02,000
+The researcher then enters it 
+
+32
+00:02:02,000 --> 00:02:03,500
+into the database manually. 
+
+33
+00:02:03,500 --> 00:02:05,000
+The visualisation of this database 
+
+34
+00:02:05,000 --> 00:02:06,500
+is what we call the datascape, 
+
+35
+00:02:06,500 --> 00:02:08,000
+which will allow the researcher 
+
+36
+00:02:08,000 --> 00:02:10,000
+to test hypotheses 
+
+37
+00:02:10,000 --> 00:02:14,000
+or to see other unforeseen hypotheses emerge.
+
+38
+00:02:15,000 --> 00:02:18,000
+It is this exploration that allows the researcher
+
+39
+00:02:18,000 --> 00:02:19,500
+to answer certain questions, 
+
+40
+00:02:19,500 --> 00:02:21,000
+in this case, 
+
+41
+00:02:21,000 --> 00:02:22,500
+"What is E.A.T.?" or 
+
+42
+00:02:22,500 --> 00:02:24,000
+"What is a collaboration 
+
+43
+00:02:24,000 --> 00:02:25,500
+between an artist and an engineer?"
+
+44
+00:02:34,000 --> 00:02:36,000
+With the processed information, 
+
+45
+00:02:36,000 --> 00:02:38,500
+it is possible to determine a number of phases
+
+46
+00:02:38,500 --> 00:02:41,000
+from the conception and implementation 
+
+47
+00:02:41,000 --> 00:02:43,000
+of a work to its exhibition 
+
+48
+00:02:43,000 --> 00:02:46,000
+and any necessary restoration work.
+
+49
+00:02:47,000 --> 00:02:4,000 
+'Oracle' co-created by 
+
+50
+00:02:49,000 --> 00:02:51,000
+artist Robert Rauschenberg 
+
+51
+00:02:51,000 --> 00:02:52,500
+and engineer Billy Kluver, 
+
+52
+00:02:52,500 --> 00:02:54,000
+and which is preserved now 
+
+53
+00:02:54,000 --> 00:02:56,000
+at the Centre Pompidou, is an interesting case.
+
+54
+00:02:56,000 --> 00:02:58,000
+Co-signed by the artist and the engineer
+
+55
+00:02:58,000 --> 00:03:00,000
+it raises a number of questions 
+
+56
+00:03:00,000 --> 00:03:02,000
+about the nature of the collaboration.
+
+57
+00:03:04,000 --> 00:03:06,000
+In the datascape, we find information 
+
+58
+00:03:06,000 --> 00:03:08,000
+about the conception and realization 
+
+59
+00:03:08,000 --> 00:03:10,000
+phases of the work. 
+
+60
+00:03:11,000 --> 00:03:13,000
+We also have a number of visual documents 
+
+61
+00:03:13,000 --> 00:03:15,000
+that show different ways 
+
+62
+00:03:15,000 --> 00:03:17,000
+in which the work was presented, 
+
+63
+00:03:17,000 --> 00:03:19,500
+in the museum and in other places. 
+
+64
+00:03:19,500 --> 00:03:21,500
+Finally, the datascape shows us 
+
+65
+00:03:21,500 --> 00:03:23,500
+that the work went through 
+
+66
+00:03:23,500 --> 00:03:25,500
+a certain number of restoration phases 
+
+67
+00:03:25,500 --> 00:03:27,000
+before its exhibition phase. 
+
+68
+00:03:27,000 --> 00:03:28,500
+This also provides information 
+
+69
+00:03:28,500 --> 00:03:30,000
+on the possible difficulties of preserving
+
+70
+00:03:30,000 --> 00:03:32,000
+a work that integrates different technologies.
+
+71
+00:03:47,000 --> 00:03:48,500
+It is difficult to show 
+
+72
+00:03:48,500 --> 00:03:51,000
+the ensemble of a particular actor's actions
+
+73
+00:03:51,000 --> 00:03:53,000
+his development and trajectory
+
+74
+00:03:53,000 --> 00:03:56,000
+within the organization.
+
+75
+00:03:56,000 --> 00:03:57,500
+For example, Robert Rauschenberg, 
+
+76
+00:03:57,500 --> 00:04:00,000
+co-founder of E.A.T. 
+
+77
+00:04:00,000 --> 00:04:04,000
+was very much involved during the period 
+
+78
+00:04:04,000 --> 00:04:07,000
+from the mid-1960s to 1970 
+
+79
+00:04:07,000 --> 00:04:08,500
+at which point he seems to have focussed
+
+80
+00:04:08,500 --> 00:04:10,000
+on other projects. 
+
+81
+00:04:10,000 --> 00:04:12,000
+This, however, did not prevent him
+
+82
+00:04:12,000 --> 00:04:13,500
+from continuing to be involved 
+
+83
+00:04:13,500 --> 00:04:15,000
+with E.A.T.-led initiatives. 
+
+84
+00:04:15,000 --> 00:04:18,000
+Similarly, it is not inconsistent to find 
+
+85
+00:04:18,000 --> 00:04:20,000
+that his most frequent collaborator 
+
+86
+00:04:20,000 --> 00:04:22,000
+was engineer Kluver, another co-founder of EAT.
+
+87
+00:04:29,000 --> 00:04:31,000
+The extraction of information from the documents
+
+88
+00:04:31,000 --> 00:04:33,500
+is painstaking work which can lead to errors.
+
+89
+00:04:33,500 --> 00:04:35,000
+But the ability to visualise
+
+90
+00:04:35,000 --> 00:04:37,000
+the results of work done 
+
+91
+00:04:37,000 --> 00:04:40,000
+allows researchers to correct any errors. 
+
+92
+00:04:40,000 --> 00:04:42,000
+It is also important to note 
+
+93
+00:04:42,000 --> 00:04:45,500
+that any information called up 
+
+94
+00:04:45,500 --> 00:04:49,000
+must be supported by a source which will verify
+
+95
+00:04:49,000 --> 00:04:55,000
+that such and such a person was involved in such and such an activity
+
+96
+00:04:59,000 --> 00:05:01,000
+All information is then aggregated 
+
+97
+00:05:01,000 --> 00:05:03,000
+to form overviews 
+
+98
+00:05:03,000 --> 00:05:06,000
+of activities and actors/participants.
+
+99
+00:05:06,000 --> 00:05:10,000
+For example, E.A.T. activity peaked
+
+100
+00:05:10,000 --> 00:05:14,000
+between the mid-1960s and early 1970s 
+
+101
+00:05:14,000 --> 00:05:16,000
+during which time it pursued 
+
+102
+00:05:16,000 --> 00:05:18,000
+a certain number of different activities. 
+
+103
+00:05:18,000 --> 00:05:21,000
+One advantage of the datascape here 
+
+104
+00:05:21,000 --> 00:05:22,500
+is that it allows us to focus 
+
+105
+00:05:22,500 --> 00:05:24,000
+not only on core activities 
+
+106
+00:05:24,000 --> 00:05:26,000
+but also to highlight 
+
+107
+00:05:26,000 --> 00:05:30,000
+all the 'smaller activities' that occupied E.A.T.
+
+108
+00:05:32,000 --> 00:05:34,000
+The organization's activities given its New York base
+
+109
+00:05:34,000 --> 00:05:36,500
+were naturally concentrated in North America 
+
+110
+00:05:36,500 --> 00:05:38,000
+but there were also projects 
+
+111
+00:05:38,000 --> 00:05:41,000
+in other parts of the world - India and, notably, Japan.
+
+112
+00:05:42,000 --> 00:05:44,000
+Another of the datascape's advantages 
+
+113
+00:05:44,000 --> 00:05:47,000
+is to allow a multiplicity of readings 
+
+114
+00:05:47,000 --> 00:05:50,000
+that depend on the specificity of the subject.
+
+115
+00:05:50,000 --> 00:05:52,000
+Here for example, 
+
+116
+00:05:52,000 --> 00:05:54,500
+it is possible to see the activities, 
+
+117
+00:05:54,500 --> 00:05:57,000
+the types of activity most prevalent 
+
+118
+00:05:57,000 --> 00:05:59,000
+within the organization, 
+
+119
+00:05:59,000 --> 00:06:01,000
+to measure the importance attached 
+
+120
+00:06:01,000 --> 00:06:03,000
+to certain actors/participants, 
+
+121
+00:06:03,000 --> 00:06:06,000
+to observe the recurrence of certain patterns 
+
+122
+00:06:06,000 --> 00:06:11,000
+or to observe the organization's aesthetic tendencies
+
+123
+00:06:11,000 --> 00:06:14,000
+and the technologies used most frequently
+
+124
+00:06:14,000 --> 00:06:16,000
+All the data can also be exported 
+
+125
+00:06:16,000 --> 00:06:20,000
+and imported into statistical analysis software 
+
+126
+00:06:20,000 --> 00:06:23,500
+such as the network analysis programme, Gephi.
+
+127
+00:06:25,000 --> 00:06:28,000
+Of course, the researcher's work does not end there.
+
+128
+00:06:28,000 --> 00:06:30,000
+In fact, it is only just beginning.
+
+129
+00:06:30,000 --> 00:06:33,000
+From the visualizations provided by the datascape,
+
+130
+00:06:33,000 --> 00:06:36,000
+the researcher must verify the hypotheses
+
+131
+00:06:36,000 --> 00:06:38,000
+and attempt to answer his or her questions
+
+132
+00:06:38,000 --> 00:06:40,000
+such those which we asked here: 
+
+133
+00:06:40,000 --> 00:06:44,000
+What is E.A.T.? What is artist-engineer collaboration?
