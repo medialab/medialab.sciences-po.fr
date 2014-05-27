@@ -128,7 +128,7 @@ body {
   background: #f9f9f9 url(img/bg.jpg) repeat;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
 }
 .center {
   margin: 0 auto;
@@ -223,22 +223,21 @@ nav#menu ul li.current-menu-item a {
   height: 200px;
 }
 .zone-1 img {
-  width: 456px;
+  width: 100%;
   height: 100%;
   position: relative;
   z-index: 100;
   border: 1px solid #CCC;
 }
 .zone-2 img {
-  width: 456px;
+  width: 100%;
   height: 100%;
   position: relative;
   z-index: 100;
   border: 1px solid #CCC;
 }
 .zone-3 img {
-  max-height: 120px;
-  max-width: 216px;
+  width: 100%;
   height: 100%;
   position: relative;
   z-index: 100;
@@ -334,14 +333,14 @@ nav#menu ul li.current-menu-item a {
 }
 .column-element h3,
 .column-element h3 a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 14px;
   line-height: 20px;
   color: #000;
   font-weight: bold;
 }
 .column-element p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 12px;
   line-height: 18px;
   color: #000;
@@ -349,7 +348,7 @@ nav#menu ul li.current-menu-item a {
 .column-element a {
   color: #c70e16;
   float: right;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 10px;
 }
 .column-element img {
@@ -362,7 +361,7 @@ nav#menu ul li.current-menu-item a {
 /*------------------------------------------------------*/
 /*------------------------------------------------------*/
 .container {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 12px;
   background: #FFF;
   display: block;
@@ -377,7 +376,7 @@ nav#menu ul li.current-menu-item a {
   padding: 10px 0;
 }
 .page-content h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 16px;
   line-height: 20px;
   color: #000;
@@ -398,7 +397,7 @@ nav#menu ul li.current-menu-item a {
 }
 .container h2 a,
 .container h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 16px;
   line-height: 20px;
   color: #000;
@@ -414,7 +413,7 @@ nav#menu ul li.current-menu-item a {
 }
 .single-post h1 a,
 .single-post h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 18px;
   color: #000;
   padding: 10px 0 10px 0;
@@ -423,7 +422,7 @@ nav#menu ul li.current-menu-item a {
 }
 .single-post h2 a,
 .single-post h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 14px;
   color: #000;
   padding: 2px 0 2px 0;
@@ -431,7 +430,7 @@ nav#menu ul li.current-menu-item a {
   font-weight: bold;
 }
 .single-post h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 18px;
   color: #000;
   padding: 0 0 10px 0;
@@ -442,7 +441,7 @@ nav#menu ul li.current-menu-item a {
   font-weight: bold;
 }
 .single-post p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 12px;
   line-height: 16px;
   color: #000;
@@ -450,7 +449,7 @@ nav#menu ul li.current-menu-item a {
   text-align: justify;
 }
 .single-post a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 12px;
   color: #CC021A;
 }
@@ -467,7 +466,7 @@ nav#menu ul li.current-menu-item a {
   margin: 10px 0 10px 0;
 }
 .single-post ul {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 12px;
   padding: 5px 0 10px 10px;
 }
@@ -482,13 +481,13 @@ nav#menu ul li.current-menu-item a {
 /*------------------------------------------------------*/
 .sidebar h4 {
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   padding: 10px 0 10px 0;
   font-weight: bold;
 }
 .sidebar h5 {
   font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   color: #c70e16;
   font-style: italic;
   padding: 0 0 10px 0;
@@ -502,7 +501,7 @@ nav#menu ul li.current-menu-item a {
   text-decoration: underline;
 }
 .sidebar a.reset {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 14px;
   color: #CC021A;
   font-weight: bold;
@@ -525,7 +524,7 @@ footer {
 .f-column ul li a,
 .f-column a,
 .f-column p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   color: #999;
   font-size: 12px;
 }
@@ -543,7 +542,7 @@ footer {
 /*------------------------------------------------------*/
 /*------------------------------------------------------*/
 .figure {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 12px;
   line-height: 16px;
   color: black;
@@ -704,69 +703,69 @@ div.center {
 header#top {
   display: inline;
   float: left;
-  width: 98.95833333333334%;
-  margin: 0 0.5208333333333333%;
+  width: 98.95833333%;
+  margin: 0 0.52083333%;
 }
 #logo {
   display: inline;
   float: left;
   width: 65.625%;
-  margin: 0 0.5208333333333333%;
+  margin: 0 0.52083333%;
 }
 #searchbar {
   display: inline;
   float: left;
-  width: 32.29166666666667%;
-  margin: 0 0.5208333333333333%;
+  width: 32.29166667%;
+  margin: 0 0.52083333%;
 }
 .nav_container {
   display: inline;
   float: left;
-  width: 98.95833333333334%;
-  margin: 0 0.5208333333333333%;
+  width: 98.95833333%;
+  margin: 0 0.52083333%;
 }
 nav#menu {
   display: inline;
   float: left;
-  width: 98.95833333333334%;
-  margin: 0 0.5208333333333333%;
+  width: 98.95833333%;
+  margin: 0 0.52083333%;
 }
 #zone-edito {
   display: inline;
   float: left;
-  width: 98.95833333333334%;
-  margin: 0 0.5208333333333333%;
+  width: 98.95833333%;
+  margin: 0 0.52083333%;
 }
 .zone-1 {
   display: inline;
   float: left;
-  width: 48.95833333333333%;
-  margin: 0 0.5208333333333333%;
+  width: 48.95833333%;
+  margin: 0 0.52083333%;
 }
 .zone-2 {
   display: inline;
   float: left;
-  width: 48.95833333333333%;
-  margin: 0 0.5208333333333333%;
+  width: 48.95833333%;
+  margin: 0 0.52083333%;
   margin-bottom: 10px;
 }
 .zone-3 {
   display: inline;
   float: left;
-  width: 23.958333333333336%;
-  margin: 0 0.5208333333333333%;
+  width: 23.95833333%;
+  margin: 0 0.52083333%;
 }
 .columns-container {
   display: inline;
   float: left;
-  width: 98.95833333333334%;
-  margin: 0 0.5208333333333333%;
+  width: 98.95833333%;
+  margin: 0 0.52083333%;
 }
 .column-content {
   display: inline;
   float: left;
-  width: 23.958333333333336%;
-  margin: 0 0.5208333333333333%;
+  width: 23.95833333%;
+  margin: 0 0.52083333%;
 }
 .container {
   float: left;
@@ -776,8 +775,8 @@ nav#menu {
 #content {
   display: inline;
   float: left;
-  width: 73.95833333333334%;
-  margin: 0 0.5208333333333333%;
+  width: 73.95833333%;
+  margin: 0 0.52083333%;
 }
 .column_display {
   float: left;
@@ -791,14 +790,14 @@ nav#menu {
 .nothing {
   display: inline;
   float: left;
-  width: 98.95833333333334%;
-  margin: 0 0.5208333333333333%;
+  width: 98.95833333%;
+  margin: 0 0.52083333%;
 }
 .sidebar {
   display: inline;
   float: left;
-  width: 23.958333333333336%;
-  margin: 0 0.5208333333333333%;
+  width: 23.95833333%;
+  margin: 0 0.52083333%;
   float: right;
 }
 footer {
@@ -809,8 +808,8 @@ footer {
 .f-column {
   display: inline;
   float: left;
-  width: 23.958333333333336%;
-  margin: 0 0.5208333333333333%;
+  width: 23.95833333%;
+  margin: 0 0.52083333%;
 }
 @media (max-width: 768px) {
   div.center {
@@ -819,118 +818,118 @@ footer {
   header#top {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   #logo {
     display: inline;
     float: left;
-    width: 73.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 73.95833333%;
+    margin: 0 0.52083333%;
   }
   #searchbar {
     display: inline;
     float: left;
-    width: 23.958333333333336%;
-    margin: 0 0.5208333333333333%;
+    width: 23.95833333%;
+    margin: 0 0.52083333%;
   }
   .nav_container {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   nav#menu {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   #zone-edito {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .zone-1 {
     display: inline;
     float: left;
-    width: 48.95833333333333%;
-    margin: 0 0.5208333333333333%;
+    width: 48.95833333%;
+    margin: 0 0.52083333%;
   }
   .zone-2 {
     display: inline;
     float: left;
-    width: 48.95833333333333%;
-    margin: 0 0.5208333333333333%;
+    width: 48.95833333%;
+    margin: 0 0.52083333%;
     margin-bottom: 10px;
   }
   .zone-3 {
     display: inline;
     float: left;
-    width: 23.958333333333336%;
-    margin: 0 0.5208333333333333%;
+    width: 23.95833333%;
+    margin: 0 0.52083333%;
   }
   .columns-container {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .column-content {
     display: inline;
     float: left;
-    width: 23.958333333333336%;
-    margin: 0 0.5208333333333333%;
+    width: 23.95833333%;
+    margin: 0 0.52083333%;
   }
   .container {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   #content {
     display: inline;
     float: left;
-    width: 73.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 73.95833333%;
+    margin: 0 0.52083333%;
   }
   .column_display {
     display: inline;
     float: left;
-    width: 32.29166666666667%;
-    margin: 0 0.5208333333333333%;
+    width: 32.29166667%;
+    margin: 0 0.52083333%;
   }
   .single-post {
     display: inline;
     float: left;
-    width: 73.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 73.95833333%;
+    margin: 0 0.52083333%;
     margin: 0 0 20px 0;
   }
   .nothing {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .sidebar {
     display: inline;
     float: left;
-    width: 23.958333333333336%;
-    margin: 0 0.5208333333333333%;
+    width: 23.95833333%;
+    margin: 0 0.52083333%;
   }
   footer {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .f-column {
     display: inline;
     float: left;
-    width: 23.958333333333336%;
-    margin: 0 0.5208333333333333%;
+    width: 23.95833333%;
+    margin: 0 0.52083333%;
   }
 }
 @media (max-width: 320px) {
@@ -940,118 +939,118 @@ footer {
   header#top {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   #logo {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   #searchbar {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .nav_container {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   nav#menu {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   #zone-edito {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .zone-1 {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .zone-2 {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
     margin-bottom: 10px;
   }
   .zone-3 {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .columns-container {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .column-content {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .container {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   #content {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .column_display {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .single-post {
     display: inline;
     float: left;
-    width: 73.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 73.95833333%;
+    margin: 0 0.52083333%;
     margin: 0 0 20px 0;
   }
   .nothing {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .sidebar {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   footer {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
   .f-column {
     display: inline;
     float: left;
-    width: 98.95833333333334%;
-    margin: 0 0.5208333333333333%;
+    width: 98.95833333%;
+    margin: 0 0.52083333%;
   }
 }
 header#top {
@@ -1065,8 +1064,8 @@ header#top {
 header#top #logo {
   display: inline;
   float: left;
-  width: 57.291666666666664%;
-  margin: 0 0.5208333333333333%;
+  width: 57.29166667%;
+  margin: 0 0.52083333%;
   margin: 0;
 }
 header#top #logo a {
@@ -1149,7 +1148,7 @@ ul.qtrans_language_chooser li .qtrans_flag_and_text span {
   display: inline;
   float: left;
   width: 40.625%;
-  margin: 0 0.5208333333333333%;
+  margin: 0 0.52083333%;
 }
 #searchbar input {
   background: none;
@@ -1162,7 +1161,7 @@ ul.qtrans_language_chooser li .qtrans_flag_and_text span {
   margin: 12px 0;
 }
 .container p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 12px;
   line-height: 20px;
   color: #000;
@@ -1194,7 +1193,7 @@ ul.qtrans_language_chooser li .qtrans_flag_and_text span {
   width: 215px;
 }
 .container .column_display p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 11px;
   line-height: 16px;
   color: #000;
@@ -1274,6 +1273,7 @@ ul.qtrans_language_chooser li .qtrans_flag_and_text span {
   height: auto;
   padding: 0;
 }
+
 #manifesto .zone-1 h2,
 #manifesto .zone-1 h3,
 #manifesto .zone-1 .content {
