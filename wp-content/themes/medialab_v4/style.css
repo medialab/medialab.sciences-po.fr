@@ -1192,6 +1192,7 @@ ul.qtrans_language_chooser li .qtrans_flag_and_text span {
   margin: 0 15px 20px 5px;
   width: 215px;
 }
+
 .container .column_display p {
   font-family: 'Bitter', serif;
   font-size: 11px;
@@ -1202,6 +1203,7 @@ ul.qtrans_language_chooser li .qtrans_flag_and_text span {
 .container .column_display img {
   max-width: 210px;
 }
+
 .container .column_display h2 {
   margin: 12px 0;
   font-size: 20px;
@@ -1222,8 +1224,14 @@ ul.qtrans_language_chooser li .qtrans_flag_and_text span {
 }
 .container .publications,
 .container .blog {
-  min-height: 170px;
+  min-height:100px;
+  max-width: 300px;
 }
+
+.container .publications img{
+  max-width: 300px;
+}
+
 .container .publications p a,
 .container .blog p a {
   color: black;

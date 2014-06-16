@@ -7,22 +7,98 @@
 get_header(); ?>	
 <div class="container">
 	<div id="content">
+		<?php
+		$people_slugs = $tools_slugs = $projects_slugs = $publication_type_slugs = array();
 		
-		<?php $people_slugs = $tools_slugs = $projects_slugs = $publication_type_slugs = array();
-		$loop = new WP_Query( array( 'post_type' => 'publications', 'orderby' => 'date', 'nopaging'=>true));
+		/*$args : an array that traduce an SQL request  */
+		
+		$args = array( 
+			'post_type' => 'publications', 
+			'orderby' => 'date', 
+			'nopaging'=>true,
+			'tax_query' => array( 'relation' => 'OR',
+
+				array(
+					'taxonomy' => 'publications_types',
+					'field' => 'slug',
+					'terms' => array( 'journal-articles', 'conferences-proceedings','books', 'thesis','working-papers', 'maps-viz', 'datascapes', 'websites' )
+				),
+			)
+		);
+
+		/*request execution. $loop = all of the post filter by terms */	
+
+		$loop = new WP_Query( $args );
+	
+		/* creation of two empty arrays that are going to be fill by the while */
+		$left = '';
+		$right = '';
+
+
 		while ( $loop->have_posts() ) : $loop->the_post();
 			//if ($post->date_debut) $time = DateTime::createFromFormat("d/m/y", $post->date_debut)->getTimestamp();
 			//else $time = $post->id;
 
-			$projects_slugs=array_merge($projects_slugs,explode(" ",get_object_terms('projets')));
-			$tools_slugs=array_merge($tools_slugs,explode(" ",get_object_terms('tools')));
-			$people_slugs=array_merge($people_slugs,explode(" ",get_object_terms('people')));
-			$publication_type_slugs=array_merge($publication_type_slugs,explode(" ",get_object_terms('publication_types')));
+			/* split the publications_types separate by an blank space, and return it in an array */
 
-			echo '<div class="column_display publications '.get_object_terms('projets').' '.get_object_terms('tools').' '.get_object_terms('people').' '.get_object_terms('publication_types').'">'.the_post_thumbnail('thumbnail').'<h2><a href="'.get_permalink($post->id).'">'.$post->post_title.'</a></h2><p>'.get_shorten_excerpt(get_the_excerpt(), 140).'</p></div>';
-		endwhile; ?>
+			$terms = explode(" ", get_object_terms('publications_types'));
+
+			/* Add publication_slugs/projets_slugs/people/slugs to the global slugs */
+			$projects_slugs=array_merge($projects_slugs,explode(" ",get_object_terms('projets')));
+			$people_slugs=array_merge($people_slugs,explode(" ",get_object_terms('people')));
+			$publication_type_slugs=array_merge($publication_type_slugs,explode(" ",get_object_terms('publications_types')));
+
+			/* Built the html div that will be display on the page */
+			$el = '<div class="column_display publications '.get_object_terms('projets').' '.get_object_terms('people').' '.get_object_terms('publications_types').'"><h2><a href="'.get_permalink($post->id).'">'.$post->post_title.'</a></h2><div id="img_publi"><a href=" '.get_permalink($post->id).'">'.get_the_post_thumbnail().'</a></div><p>'.get_shorten_excerpt(get_the_excerpt(), 140).'</p></div>';
+		
+
+			if(in_array('datascapes', $terms)) {
+				$right.= $el;
+			} 
+
+			if(in_array('maps-viz', $terms)) {
+				$right.= $el;
+			} 
+
+			if(in_array('websites', $terms)) {
+				$right.= $el;
+			} 
+
+			if (in_array('journal-articles', $terms)) {
+			 	$left.= $el;
+			 }
+
+			if (in_array('conferences-proceedings', $terms)) {
+			 	$left.= $el;
+			 }
+
+			if (in_array('books', $terms)) {
+			 	$left.= $el;
+			 }
+
+			if (in_array('thesis', $terms)) {
+			 	$left.= $el;
+			 }
+
+			if (in_array('working-papers', $terms)) {
+			 	$left.= $el;
+			 };
+
+		endwhile; 
+		?>
+		<div id="content_left">
+		<?php echo $left ?>
+		</div>
+
+		<div id="content_right">
+		<?php echo $right ?>
+		</div>
+
 	</div>
-	<div class="sidebar">
+
+
+
+	<div class="sidebar" id="sidebar_publi">
 		<h4>Publications types</h4>
 		<h5>filter by publication types</h5>
 		<div class="sidebar-inside">
@@ -31,7 +107,7 @@ get_header(); ?>
 				
 				foreach ($publication_type_slugs as $publication_type) :
 					//echo $publication_type;
-					$pt=get_term_by("slug",$publication_type,"publication_types");
+					$pt=get_term_by("slug",$publication_type,"publications_types");
 			?>
 					<a id="<?php echo $pt->slug; ?>" class="facet"><?php echo $pt->name; ?></a>
 			<?php
@@ -72,17 +148,6 @@ get_header(); ?>
 			<?php
 			endif;
 			endwhile; ?>
-		</div>
-		<h4>Related tools</h4>
-		<h5>filter by tool</h5>
-		<div class="sidebar-inside">
-			<?php 
-				$tools_slugs=array_unique($tools_slugs);
-			foreach ($tools_slugs as $tool) {
-			$json = get_tool_metas($tool);
-			?>
-			<a id="<?php echo $tool; ?>" class="facet"><?php echo $json->name; ?></a>
-			<?php } ?>
 		</div>
 	</div>
 </div>

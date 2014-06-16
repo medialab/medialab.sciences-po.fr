@@ -156,6 +156,7 @@ nav#menu
 {
 	.column(3);
 	float: right;
+	margin-left:5px;
 }
 
 footer
@@ -485,7 +486,7 @@ footer
 @header-height: 83px;
 
 @language-height: 18px;
-@menu-height: 63px;
+@menu-height: 50px;
 
 @red: #CC021A;
 
@@ -509,6 +510,24 @@ header#top{
 	}
 }
 
+#about{
+	font-style:normal;
+	font-size: 12px;
+	text-transform: lowercase;
+	margin-left:840px;
+	margin-bottom:20px;
+}
+
+#about a {
+	text-decoration: none;
+	color:black;
+	}
+
+#about a:hover{
+	text-decoration: none;
+	color:#cc021a;
+	}
+
 .nav_container{
 	border-bottom: 1px solid @red;
 	padding: 0;
@@ -517,6 +536,7 @@ header#top{
 	clear: both;
 	display: block;
 }
+
 
 nav#menu ul#menu-main-menu{
 	
@@ -531,7 +551,7 @@ nav#menu ul#menu-main-menu{
 		border-top: 1px solid transparent;
 		
 		text-align: center;
-		width: 104px;
+		width: 130px;
 		height: @menu-height;
 		float:left;
 		margin:0;
@@ -542,6 +562,7 @@ nav#menu ul#menu-main-menu{
 			display:block;
 			padding:0;
 			margin:0;
+			font-size: 14px;
 			line-height: @menu-height;
 			height: @menu-height;
 			
@@ -634,9 +655,7 @@ ul.qtrans_language_chooser{
 				max-width: 200px;
 			}
 		}
-		.publications {
-			min-height: 170px;
-		}
+	
 		.tools, .people, .projets {
 			min-height: 270px;
 		}
@@ -658,10 +677,9 @@ ul.qtrans_language_chooser{
 			color: #000;
 			text-align: justify;
 	
-		}		
-		img{
-			max-width: 210px;
-		}	
+		}
+
+
 	
 		h2{
 			margin: @grid-padding 0;
@@ -678,22 +696,64 @@ ul.qtrans_language_chooser{
 			}
 		}
 	}
+
+
+
 	.projets {
 		img {
 			max-height: 140px;
 		}
 		min-height: 270px;
 	}
-	.publications, .blog {
-		min-height: 170px;
+
+	.publications {
+		margin:0 0px 0px 0px;
+		width:300px;
+		}
+
+
+	 .blog {
+	width:300px;
+	margin-left:30px;
+	margin-bottom:10px;
+	height:90px;}
+
+
+	.publications img{
+		height:190px;
+		width:310px;}
+
+	#content_left{
+	float:left;
+	width:340px;
+	}
+
+	#content_right{
+	float:right;
+	width:310px;
+	padding-left:60px;
+	}
+
+	#content_right p{
+	width:300px;
+	}
+
+	#content_right h2{
+	width:300px;
+	}
+
+	#sidebar_publi{
+	max-width:170px;
+	}
+		
 		p a {
 			color: black;
 		}
 	}
+
 	.tools, .people {
 		height: 270px;
 	}
-}
 
 
 #manifesto{
@@ -858,3 +918,4 @@ footer{
 		}
 	}
 }
+

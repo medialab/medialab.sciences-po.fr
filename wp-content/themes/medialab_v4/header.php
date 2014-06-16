@@ -48,17 +48,14 @@
 	?></title>
     <!-- Stylesheets -->
 	<!-- <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" /> -->
-	<!-- <link rel="stylesheet/less" href="<?php echo get_template_directory_uri(); ?>/style.less" type="text/css" media="screen" /> -->
-	
 	<!-- link rel="stylesheet" href="fluid.css" type="text/css" media="screen" / -->
-	
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'> -- >
 	
+	<!--TYPOGRAPHIE BITTER -->
 	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.8.js" type="text/javascript"></script>
     <!-- Scripts -->
-	<!-- <script src="<?php echo get_template_directory_uri(); ?>/js/less-1.3.0.min.js" type="text/javascript"></script> -->
 	<!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -67,25 +64,40 @@
 	<?php wp_head(); ?>
 	<!-- script src="<?php echo get_template_directory_uri(); ?>/js/jquery.masonry.min.js"></script -->
 	<script src="<?php echo get_template_directory_uri(); ?>/js/pin_like.js"></script>
-	
+
+
+	<!-- Voici les fichiers less : -->
+	<link rel="stylesheet/less" href="<?php echo get_template_directory_uri(); ?>/style.less" type="text/css" media="screen" />
+	<script src="<?php echo get_template_directory_uri(); ?>/js/less-1.3.0.min.js" type="text/javascript"></script>
+
 	
 </head>
 <body>
 <div class="center">
 	<!-- Header -->
 	<header id="top">
+
 		<div id="logo">
 			<a href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Science Po | Medialab" /></a>
+			
 		</div>
+		
 		<div id="searchbar">
 			<?php get_search_form(); ?>
 			<?php echo qtrans_generateLanguageSelectCode('both'); ?>
-			
 		</div>
+
+		<div id="about">
+		<a href="http://www.medialab.sciences-po.fr/about">about the lab</a>
+		
+		</div>
+
 	</header>
 	<div class="nav_container">
 		<!-- Main navigation -->
 		<nav id="menu">
 			<?php wp_nav_menu('primary-menu');?>
 		</nav>
+
+
 	</div>
