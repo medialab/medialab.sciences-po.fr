@@ -22,7 +22,7 @@
 
 		<div style="float:left; width:50%; font-size:12px; padding-left:15px; height:40px; line-height:40px">
 			Sciences Po | médialab &bull; 27 rue St Guillaume &bull;
-			75337 Paris Cedex 07   -  <a href="http://www.medialab.sciences-po.fr/contact">Contact us</a>
+			75337 Paris Cedex 07
 		</div>
 
 		<div style="float:right; font-size:12px; padding-right:15px; height:40px; line-height:40px">
