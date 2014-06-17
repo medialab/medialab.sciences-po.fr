@@ -29,17 +29,27 @@ $(document).ready(function(){
 
 	// SORT OBJECTS BY PEOPLE/PROJECTS/TOOLS
 	$(".facet").click(function() {
-		if ($(this).hasClass("active_facet")) {
+		var facet = $(this),
+				target = facet.attr('data-target') || facet.attr('id');
+
+		if(facet.hasClass("active_facet")) {
 			$(".column_display").css("display","block");
 			$(".active_facet").removeClass("active_facet");
 			$(".active-p-enabled").removeClass("active-p-enabled");
 		} else {
 			$(".active-p-enabled").removeClass("active-p-enabled");
 			$(".active_facet").removeClass("active_facet");
-			$(this).addClass("active_facet");
+			facet.addClass("active_facet");
 			// remove all elements
-			$(".column_display").css("display","none");
-			$("."+this.id).css("display","block");
+			$(".column_display").each(function(i, e){
+				var el = $(this);
+				if(!el.hasClass(target))
+					el.hide();
+				else
+					el.show();
+				
+			})
+			$("#" + target).addClass("active_facet").css("display","block");
 		}
 		realign_columns();
 	});

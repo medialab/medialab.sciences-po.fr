@@ -530,10 +530,10 @@ nav#menu ul#menu-main-menu{
 
 
 	#menu-item-1380, #menu-item-156 {
-		margin-left:20px;
-		padding-left: 40px;
+		margin-left:10px;
+		padding-left: 30px;
 
-		border-left: 1px solid #f7d8db;
+		border-left: 1px solid @red;//#f7d8db;
 	}
 
 
@@ -546,23 +546,28 @@ nav#menu ul#menu-main-menu{
 		
 		text-align: center;
 		width: auto;
-		height: @menu-height;
+		height: @menu-height - 30px;
 		float:left;
-		margin:0;
-		padding:0 20px;
+		margin:0 20px;
+		margin-top: 15px;
+		padding:0;
 
+		&:first-child{
+			margin-left: 12px;
+		}
 		a, a:visited{
 			color: black;
 			display:block;
 			padding:0;
 			margin:0;
 			font-size: 13px;
-			line-height: @menu-height;
-			height: @menu-height;
+			line-height: 16px;
+			height: @menu-height - 30px;
 			
 		}
 		&:hover a{
 			color: @red;
+			
 		}
 
 		&.current-menu-item{
@@ -701,13 +706,25 @@ ul.qtrans_language_chooser{
 	}
 
 	.publications {
-		margin:0 0px 0px 0px;
-		width:300px;
+		margin: 0 0px 10px 0px;
+		width: 100%;
+		border-bottom: 1px solid #d4d4d4;
+		padding-bottom: 14px;
 
 		h3{
-			background-color: #f7d8db;
+			margin: 0;
+			a{
+			color: @red;
+			text-decoration: none;
+			//background-color: #f7d8db;
 			display: inline-block;
-			padding: 4px 8px;
+			//padding: 4px 8px;
+			// padding: 8px 0;
+			}
+		}
+
+		.img_publi{
+			margin-top: 15px;
 		}
 	}
 
@@ -725,14 +742,15 @@ ul.qtrans_language_chooser{
 		width:310px;}
 
 	#content_left{
-	float:left;
-	width:340px;
+		float:left;
+		width: 320px;
+		margin-left: 10px;
 	}
 
 	#content_right{
 	float:right;
-	width:310px;
-	padding-left:60px;
+	width:320px;
+	padding-left:0px;
 	}
 
 	#content_right p{
@@ -920,3 +938,15 @@ footer{
 	}
 }
 
+
+/**
+ ugly workaround sorry
+ */
+.facet.active_facet{
+	background-color: #ccc;
+
+	&.do-not-enlighten{
+		padding: 0;
+		background-color: transparent
+	}
+}
