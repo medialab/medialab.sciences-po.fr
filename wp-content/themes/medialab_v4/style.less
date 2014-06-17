@@ -510,23 +510,6 @@ header#top{
 	}
 }
 
-#about{
-	font-style:normal;
-	font-size: 12px;
-	text-transform: lowercase;
-	margin-left:840px;
-	margin-bottom:20px;
-}
-
-#about a {
-	text-decoration: none;
-	color:black;
-	}
-
-#about a:hover{
-	text-decoration: none;
-	color:#cc021a;
-	}
 
 .nav_container{
 	border-bottom: 1px solid @red;
@@ -544,6 +527,17 @@ nav#menu ul#menu-main-menu{
 	margin:0;
 	padding:0;
 
+
+
+	#menu-item-1380, #menu-item-156 {
+		margin-left:20px;
+		padding-left: 40px;
+
+		border-left: 1px solid #f7d8db;
+	}
+
+
+
 	li{
 
 		display:block; 
@@ -551,18 +545,18 @@ nav#menu ul#menu-main-menu{
 		border-top: 1px solid transparent;
 		
 		text-align: center;
-		width: 130px;
+		width: auto;
 		height: @menu-height;
 		float:left;
 		margin:0;
-		padding:0;
+		padding:0 20px;
 
 		a, a:visited{
 			color: black;
 			display:block;
 			padding:0;
 			margin:0;
-			font-size: 14px;
+			font-size: 13px;
 			line-height: @menu-height;
 			height: @menu-height;
 			
@@ -639,8 +633,8 @@ ul.qtrans_language_chooser{
 .container{
 
 	p{
-		font-family: 'Bitter', serif;
-		font-size: 12px;
+		font-family: 'Open Sans', serif;
+		font-size: 14px;
 		line-height: 20px;
 		color: #000;
 		text-align: justify;
@@ -671,7 +665,7 @@ ul.qtrans_language_chooser{
 		width:215px;
 
 		p{
-			font-family: 'Bitter', serif;
+			font-family: 'Open Sans', serif;
 			font-size: 11px;
 			line-height: 16px;
 			color: #000;
@@ -709,14 +703,21 @@ ul.qtrans_language_chooser{
 	.publications {
 		margin:0 0px 0px 0px;
 		width:300px;
+
+		h3{
+			background-color: #f7d8db;
+			display: inline-block;
+			padding: 4px 8px;
 		}
+	}
 
 
 	 .blog {
 	width:300px;
 	margin-left:30px;
 	margin-bottom:10px;
-	height:90px;}
+	//height:90px;
+	}
 
 
 	.publications img{

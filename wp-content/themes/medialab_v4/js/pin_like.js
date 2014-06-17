@@ -2,6 +2,8 @@ var rowheights = []; var nb_columns = 3;
 if (document.URL.match('/?s=')) nb_columns = 4;
 // FIX SIZE OF PIN_LIKE PIECES
 function realign_columns() {
+	// @todo 
+	return;
 	for (var i = 0; i < Math.floor($(".column_display:visible").length/nb_columns); i++) rowheights[i] = 0;
 	$(".column_display:visible").each(function(idx) {
 		var row = Math.floor(idx/nb_columns);
@@ -9,6 +11,7 @@ function realign_columns() {
 	});
 	$(".column_display:visible").each(function(idx) {
 		$(this).height(rowheights[Math.floor(idx/nb_columns)]);
+		debugger;
 	});
 }
 

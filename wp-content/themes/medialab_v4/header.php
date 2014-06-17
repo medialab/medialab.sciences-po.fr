@@ -87,17 +87,15 @@
 			<?php echo qtrans_generateLanguageSelectCode('both'); ?>
 		</div>
 
-		<div id="about">
-		<a href="http://www.medialab.sciences-po.fr/about">about the lab</a>
-		
-		</div>
 
 	</header>
 	<div class="nav_container">
 		<!-- Main navigation -->
 		<nav id="menu">
 			<?php wp_nav_menu('primary-menu');?>
+
 		</nav>
+
 
 
 	</div>
