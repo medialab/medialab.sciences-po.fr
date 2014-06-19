@@ -13,10 +13,21 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
+            <?php
+            	$remote_url = array_pop(get_post_meta($post->ID, 'remote_url'));
+            ?>
+
 			<h2><?php the_title(); ?></h2>
 			<?php the_post_thumbnail("s_post"); ?>
 			<p><em><?php echo get_the_excerpt(); ?></em></p>
-			<?php the_content(); ?>			
+			<p><?php 
+
+			echo ($remote_url?'<a href="'.$remote_url.'">'.$remote_url.'</a>':'') ?>
+
+			</p>
+
+			<?php the_content(); ?>
+
 
 		<?php endwhile; ?>
 
