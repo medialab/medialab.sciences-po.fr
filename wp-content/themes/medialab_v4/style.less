@@ -120,7 +120,7 @@ nav#menu
 #content
 {
 	.column(9);
-	margin-left: 15px;
+	margin-left: 14.50px;
 }
 
 .column_display
@@ -137,7 +137,7 @@ nav#menu
 {
 	float: left;
 	width: 690px;
-	margin: 0 0 20px 0;
+	margin: 12px 0px 20px 5px;
 }
 
 ////////////////////
@@ -292,7 +292,7 @@ nav#menu
 .single-post
 {
 	.column(9);
-	margin: 0 0 20px 0;
+	margin: 12px 0px 20px 5px;
 }
 
 ////////////////////
@@ -443,7 +443,7 @@ nav#menu
 .single-post
 {
 	.column(9);
-	margin: 0 0 20px 0;
+	margin: 12px 0px 20px 5px;
 }
 
 ////////////////////
@@ -562,7 +562,7 @@ nav#menu ul#menu-main-menu{
 			display:block;
 			padding:0;
 			margin:0;
-			font-size: 13px;
+			font-size: 12px;
 			line-height: 16px;
 			height: @menu-height - 30px;
 			
@@ -584,7 +584,9 @@ nav#menu ul#menu-main-menu{
 ul.qtrans_language_chooser{
 	padding:0;
 	height: @header-height;
-	margin-left: 80px;
+	margin-left: 94px;
+	width:312px;
+
 	li{
 		height: @header-height;
 		vertical-align:baseline;
@@ -632,7 +634,7 @@ ul.qtrans_language_chooser{
 		margin-top:29px;	
 		font-style: normal;
 		font-size: 10px;
-		padding: 7px 0 6px 0;
+		padding: 5px 0 6px 0;
 	}
 }
 
@@ -662,13 +664,21 @@ ul.qtrans_language_chooser{
 		}
 	}
 	
-	.tools, .people {
-		height: 270px;
+		.people{
+			height: 300px;
+			margin: 0 21.5px 10px 0px;
+			border-bottom: 1px solid #d4d4d4;
+			padding-bottom: 0px;
 	}
+		.tools{
+			height: 300px;
+			margin: 0 21.5px 10px 0px;
+			border-bottom: 1px solid #d4d4d4;
+		}
 	
 	.column_display{
 		padding:0;
-		margin:0 15px 20px 5px;
+		margin:0 15px 10px 0px;
 		width:215px;
 
 		p{
@@ -679,8 +689,6 @@ ul.qtrans_language_chooser{
 			text-align: justify;
 	
 		}
-
-
 	
 		h2{
 			margin: @grid-padding 0;
@@ -701,7 +709,7 @@ ul.qtrans_language_chooser{
 
 
 	.projets {
-		margin: 0 21px 10px 0px;
+		margin: 0 21.5px 10px 0px;
 		border-bottom: 1px solid #d4d4d4;
 		padding-bottom: 0px;
 
@@ -736,8 +744,7 @@ ul.qtrans_language_chooser{
 
 
 	 .blog {
-		margin: 0 55px 10px 0px;
-		width: 100%;
+		margin: 0 15px 10px 5px;
 		border-bottom: 1px solid #d4d4d4;
 		padding-bottom: 14px;
 	//height:90px;
@@ -751,7 +758,7 @@ ul.qtrans_language_chooser{
 	#content_left{
 		float:left;
 		width: 320px;
-		margin-left: 10px;
+
 	}
 
 	#content_right{
@@ -911,6 +918,7 @@ padding: 0;
 	clear: both;
 }
 
+
 footer{
 	margin:0;
 	padding:0;
@@ -941,6 +949,11 @@ footer{
 	}
 }
 
+#warning {
+	padding-bottom:19px;
+	padding-left:15px;
+	font-style: italic;
+}
 
 /**
  ugly workaround sorry

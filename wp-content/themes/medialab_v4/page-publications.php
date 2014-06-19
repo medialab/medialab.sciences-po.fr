@@ -151,5 +151,5 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-<i>Warning : The following texts are made available for private academic use only. Published papers are presented here in their pre-print version. Important differences may exist between this version and the final published one. Always report to the authors and publishers for any other use.</i>
+<div id="warning">Warning : The following texts are made available for private academic use only. Published papers are presented here in their pre-print version. Important differences may exist between this version and the final published one. Always report to the authors and publishers for any other use.</div>
 <?php get_footer(); ?>
