@@ -43,13 +43,18 @@ get_header(); ?>
 
 			$terms = explode(" ", get_object_terms('publications_types'));
 
+			$remote_url = array_pop(get_post_meta($post->ID, 'remote_url'));
+
 			/* Add publication_slugs/projets_slugs/people/slugs to the global slugs */
 			$projects_slugs=array_merge($projects_slugs,explode(" ",get_object_terms('projets')));
 			$people_slugs=array_merge($people_slugs,explode(" ",get_object_terms('people')));
 			$publication_type_slugs=array_merge($publication_type_slugs,explode(" ",get_object_terms('publications_types')));
 
 			/* Built the html div that will be display on the page */
-			$el = '<div class="column_display publications '.get_object_terms('projets').' '.get_object_terms('people').' '.get_object_terms('publications_types').'"><h2><a href="'.get_permalink($post->id).'">'.$post->post_title.'</a></h2><h3 class="facet do-not-enlighten" data-target="'.get_object_terms('publications_types').'"><a href="#" title="">'.implode($terms, ',').'</a></h3><div class="img_publi"><a href=" '.get_permalink($post->id).'">'.get_the_post_thumbnail().'</a></div><p>'.get_shorten_excerpt(get_the_excerpt(), 140).'</p></div>';
+			$el = '<div class="column_display publications '.get_object_terms('projets').' '.get_object_terms('people').' '.get_object_terms('publications_types').'"><h2><a href="'.get_permalink($post->id).'">'.$post->post_title.'</a></h2><h3 class="facet do-not-enlighten" data-target="'.get_object_terms('publications_types').'"><a href="#" title="">'.implode($terms, ',').'</a></h3><div class="img_publi"><a href=" '.get_permalink($post->id).'">'.get_the_post_thumbnail().'</a></div><p>'.get_shorten_excerpt(get_the_excerpt(), 140).'</p>
+				'.($remote_url?'<a href="'.$remote_url.'">'.$remote_url.'</a>':'').'
+
+			</div>';
 		
 
 			if(in_array('datascapes', $terms)) {
