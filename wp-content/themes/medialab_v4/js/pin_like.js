@@ -3,8 +3,47 @@ if (document.URL.match('/?s=')) nb_columns = 4;
 // FIX SIZE OF PIN_LIKE PIECES
 function realign_columns() {
 	// @todo 
+	var pins = $(".column_display:visible"), // only visible ones
+			nb_columns = +pins.first().parent().attr('data-columns') || 3,// data columns attribute OR default
+			queue = []; // queue
+
+	console.log(pins.first().parent().attr('data-columns'));
+
+	if(nb_columns < 2) {
+		console.log('%c realign_columns()', 'background-color:green; color: white', 'deactivated - cfr data-column html attribute' );
+		return;
+	};
+
+	console.log('%c realign_columns()', 'background-color:green; color: white');
+	console.log('', pins.length, '- n. columns', nb_columns);
+
+	// calculate maximum height per row, easy enough
+	pins.each(function(i, e) {
+		var col = i % nb_columns,
+				h = $(e).height(),
+				title = $(e).find('h2').text(),
+				maxh = 0; 
+
+		if(col == 0 && i != 0){ // new row, cloture previous
+			console.log('  - clear elements', col, queue.length, queue);
+			// calculate maximum and clear
+			maxh = Math.max.apply(this, queue.map(function(d){return d.h}))
+			
+			for(var j in queue) {
+				queue[j].el.height(maxh);
+			}
+			queue = [];
+		}
+		console.log('  ', i, '- n. in col', col, '- height', h, '- title', title);
+		
+		queue.push({h:h, el:$(e)});
+
+		
+	});
+
+
 	return;
-	for (var i = 0; i < Math.floor($(".column_display:visible").length/nb_columns); i++) rowheights[i] = 0;
+		for (var i = 0; i < Math.floor($(".column_display:visible").length/nb_columns); i++) rowheights[i] = 0;
 	$(".column_display:visible").each(function(idx) {
 		var row = Math.floor(idx/nb_columns);
 		rowheights[row] = Math.max(rowheights[row], $(this).height());
