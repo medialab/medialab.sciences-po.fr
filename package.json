@@ -1,0 +1,26 @@
+{
+  "name": "medialab.sciences-po.fr",
+  "version": "0.0.0",
+  "description": "medialab website wp",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medialab/medialab.sciences-po.fr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/medialab/medialab.sciences-po.fr/issues"
+  },
+  "homepage": "https://github.com/medialab/medialab.sciences-po.fr",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^0.11.2"
+  }
+}

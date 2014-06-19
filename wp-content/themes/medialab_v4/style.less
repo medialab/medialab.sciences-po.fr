@@ -159,6 +159,29 @@ nav#menu
 	float: right;
 	margin-left:5px;
 	max-width:170px;
+
+	a.facet{
+ 		color: #757575;
+ 		text-decoration: none;
+ 		.transition(padding, .2s, ease-in-out);
+
+ 		&.active_facet{
+ 			color: @black;
+ 			
+ 		}
+ 	}
+
+ 	h4{
+ 		font-size:14px;
+ 		font-weight: normal;
+ 		margin-top: 10px;
+ 	}
+	h5{
+		color: @grey;
+		border-bottom: 1px solid @grey;
+		margin-bottom: 10px;
+		padding-bottom: 15px;
+	}
 }
 
 footer
@@ -486,13 +509,28 @@ footer
 //
 
 @header-height: 83px;
-
 @language-height: 18px;
 @menu-height: 50px;
 
 @red: #CC021A;
+@black: #000;
+@grey: #757575;
 
 @grid-padding:12px;
+
+/*
+
+  mixins
+  ======
+
+*/
+.transition(@property:all, @duration:.4s, @easing:ease-in-out){
+   -webkit-transition: @arguments;
+    -moz-transition: @arguments;
+    -ms-transition: @arguments;
+    -o-transition: @arguments;
+    transition: @arguments; 
+}
 
 header#top{
 	border-bottom: 1px solid fade( @red, 15%);
@@ -644,7 +682,7 @@ ul.qtrans_language_chooser{
 
 	p{
 		font-family: 'Open Sans', serif;
-		font-size: 14px;
+		font-size: 13px;
 		line-height: 20px;
 		color: #000;
 		text-align: justify;
@@ -660,13 +698,12 @@ ul.qtrans_language_chooser{
 			}
 		}
 	
-		.tools, .people, .projets {
+		.tools, .projets {
 			min-height: 270px;
 		}
 	}
 	
 		.people{
-			height: 300px;
 			margin: 0 21.5px 10px 0px;
 			border-bottom: 1px solid #d4d4d4;
 			padding-bottom: 0px;
@@ -684,8 +721,8 @@ ul.qtrans_language_chooser{
 
 		p{
 			font-family: 'Open Sans', serif;
-			font-size: 11px;
-			line-height: 16px;
+			font-size: 12px;
+			line-height: 18px;
 			color: #000;
 			text-align: justify;
 	
@@ -729,7 +766,7 @@ ul.qtrans_language_chooser{
 		h3{
 			margin: 0;
 			a{
-			color: @red;
+			color: #757575;//@red;
 			text-decoration: none;
 			//background-color: #f7d8db;
 			display: inline-block;
@@ -781,7 +818,7 @@ ul.qtrans_language_chooser{
 		}
 	}
 
-	.tools, .people {
+	.tools {
 		height: 270px;
 	}
 
@@ -959,11 +996,16 @@ footer{
 /**
  ugly workaround sorry
  */
-.facet.active_facet{
-	background-color: #D4D4D4;
 
-	&.do-not-enlighten{
-		padding: 0;
-		background-color: transparent
+.facet{
+	
+	&.active_facet{
+	//background-color: #D4D4D4;
+
+		&.do-not-enlighten{
+			padding: 0;
+			background-color: transparent
+		}
 	}
+
 }
