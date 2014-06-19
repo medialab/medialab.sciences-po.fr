@@ -13,7 +13,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-			<h2><?php the_title(); ?></h2>
+			<h1><?php the_title(); ?></h1>
 			<?php the_post_thumbnail("s_post"); ?>
 			<p><em><?php echo get_the_excerpt(); ?></em></p>
 			<?php the_content(); ?>			
