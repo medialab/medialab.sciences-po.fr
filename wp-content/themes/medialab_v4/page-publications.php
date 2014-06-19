@@ -86,11 +86,11 @@ get_header(); ?>
 
 		endwhile; 
 		?>
-		<div id="content_left">
+		<div id="content_left" data-columns="1">
 		<?php echo $left ?>
 		</div>
 
-		<div id="content_right">
+		<div id="content_right"  data-columns="1">
 		<?php echo $right ?>
 		</div>
 

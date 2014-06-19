@@ -1,10 +1,128 @@
+'strict'
+
+// Production steps of ECMA-262, Edition 5, 15.4.4.19
+// Reference: http://es5.github.com/#x15.4.4.19
+if (!Array.prototype.map) {
+
+  Array.prototype.map = function (callback, thisArg) {
+
+    var T, A, k;
+
+    if (this == null) {
+      throw new TypeError(" this is null or not defined");
+    }
+
+    // 1. Let O be the result of calling ToObject passing the |this| value as the argument.
+    var O = Object(this);
+
+    // 2. Let lenValue be the result of calling the Get internal method of O with the argument "length".
+    // 3. Let len be ToUint32(lenValue).
+    var len = O.length >>> 0;
+
+    // 4. If IsCallable(callback) is false, throw a TypeError exception.
+    // See: http://es5.github.com/#x9.11
+    if (typeof callback !== "function") {
+      throw new TypeError(callback + " is not a function");
+    }
+
+    // 5. If thisArg was supplied, let T be thisArg; else let T be undefined.
+    if (thisArg) {
+      T = thisArg;
+    }
+
+    // 6. Let A be a new array created as if by the expression new Array( len) where Array is
+    // the standard built-in constructor with that name and len is the value of len.
+    A = new Array(len);
+
+    // 7. Let k be 0
+    k = 0;
+
+    // 8. Repeat, while k < len
+    while (k < len) {
+
+      var kValue, mappedValue;
+
+      // a. Let Pk be ToString(k).
+      //   This is implicit for LHS operands of the in operator
+      // b. Let kPresent be the result of calling the HasProperty internal method of O with argument Pk.
+      //   This step can be combined with c
+      // c. If kPresent is true, then
+      if (k in O) {
+
+        var Pk = k.toString(); // This was missing per item a. of the above comment block and was not working in IE8 as a result
+
+        // i. Let kValue be the result of calling the Get internal method of O with argument Pk.
+        kValue = O[Pk];
+
+        // ii. Let mappedValue be the result of calling the Call internal method of callback
+        // with T as the this value and argument list containing kValue, k, and O.
+        mappedValue = callback.call(T, kValue, k, O);
+
+        // iii. Call the DefineOwnProperty internal method of A with arguments
+        // Pk, Property Descriptor {Value: mappedValue, Writable: true, Enumerable: true, Configurable: true},
+        // and false.
+
+        // In browsers that support Object.defineProperty, use the following:
+        // Object.defineProperty( A, Pk, { value: mappedValue, writable: true, enumerable: true, configurable: true });
+
+        // For best browser support, use the following:
+        A[Pk] = mappedValue;
+      }
+      // d. Increase k by 1.
+      k++;
+    }
+
+    // 9. return A
+    return A;
+  };
+}
+
 var rowheights = []; var nb_columns = 3;
 if (document.URL.match('/?s=')) nb_columns = 4;
 // FIX SIZE OF PIN_LIKE PIECES
 function realign_columns() {
 	// @todo 
+	var pins = $(".column_display:visible"), // only visible ones
+			nb_columns = +pins.first().parent().attr('data-columns') || 3,// data columns attribute OR default
+			queue = []; // queue
+
+	console.log(pins.first().parent().attr('data-columns'));
+
+	if(nb_columns < 2) {
+		console.log('%c realign_columns()', 'background-color:green; color: white', 'deactivated - cfr data-column html attribute' );
+		return;
+	};
+
+	console.log('%c realign_columns()', 'background-color:green; color: white');
+	console.log('', pins.length, '- n. columns', nb_columns);
+
+	// calculate maximum height per row, easy enough
+	pins.each(function(i, e) {
+		var col = i % nb_columns,
+				h = $(e).height(),
+				title = $(e).find('h2').text(),
+				maxh = 0; 
+
+		if(col == 0 && i != 0){ // new row, cloture previous
+			console.log('  - clear elements', col, queue.length, queue);
+			// calculate maximum and clear
+			maxh = Math.max.apply(this, queue.map(function(d){return d.h}))
+			
+			for(var j in queue) {
+				queue[j].el.height(maxh);
+			}
+			queue = [];
+		}
+		console.log('  ', i, '- n. in col', col, '- height', h, '- title', title);
+		
+		queue.push({h:h, el:$(e)});
+
+		
+	});
+
+
 	return;
-	for (var i = 0; i < Math.floor($(".column_display:visible").length/nb_columns); i++) rowheights[i] = 0;
+		for (var i = 0; i < Math.floor($(".column_display:visible").length/nb_columns); i++) rowheights[i] = 0;
 	$(".column_display:visible").each(function(idx) {
 		var row = Math.floor(idx/nb_columns);
 		rowheights[row] = Math.max(rowheights[row], $(this).height());
