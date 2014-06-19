@@ -13,7 +13,7 @@ get_header(); ?>
 
 		<?php the_post(); $postname = $post->post_name; ?>
 
-			<h1><?php the_title(); ?></h1>
+			<h2><?php the_title(); ?></h2>
 			<div style="width:100%;clear:both;align:center;">
 			<?php $video = get_post_meta($post->ID, 'vimeo_id', true);
 				 if (!$video) the_post_thumbnail("s_post");
