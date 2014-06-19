@@ -532,10 +532,7 @@ nav#menu ul#menu-main-menu{
 
 
 	#menu-item-1380, #menu-item-156 {
-		margin-left:10px;
-		padding-left: 30px;
-
-		border-left: 1px solid @red;//#f7d8db;
+		margin-left:80px;
 	}
 
 
@@ -550,9 +547,9 @@ nav#menu ul#menu-main-menu{
 		width: auto;
 		height: @menu-height - 30px;
 		float:left;
-		margin:0 20px;
-		margin-top: 15px;
-		padding:0;
+		margin:-1px 20px 0 20px;
+		padding: 15px 0 0 0;
+		
 
 		&:first-child{
 			margin-left: 12px;
@@ -573,12 +570,16 @@ nav#menu ul#menu-main-menu{
 		}
 
 		&.current-menu-item{
+			border-top: 1px solid #c70e16;
+			
 			a, a:visited{ 
 				color: @red;
 
 			}
 		}
 	}
+
+
 }
 
 ul.qtrans_language_chooser{
