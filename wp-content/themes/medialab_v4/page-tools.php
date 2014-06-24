@@ -11,6 +11,7 @@ get_header(); ?>
 		<?php 
 		$tools_array=array();
 		$tools = get_terms("tools");
+
 		shuffle($tools);
 		foreach ($tools as $tool) {
 			$json = get_tool_metas($tool->name);

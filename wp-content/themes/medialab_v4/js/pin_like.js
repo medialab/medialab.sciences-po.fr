@@ -86,15 +86,15 @@ function realign_columns() {
 			nb_columns = +pins.first().parent().attr('data-columns') || 3,// data columns attribute OR default
 			queue = []; // queue
 
-	console.log(pins.first().parent().attr('data-columns'));
+	// console.log(pins.first().parent().attr('data-columns'));
 
 	if(nb_columns < 2) {
-		console.log('%c realign_columns()', 'background-color:green; color: white', 'deactivated - cfr data-column html attribute' );
+		// console.log('%c realign_columns()', 'background-color:green; color: white', 'deactivated - cfr data-column html attribute' );
 		return;
 	};
 
-	console.log('%c realign_columns()', 'background-color:green; color: white');
-	console.log('', pins.length, '- n. columns', nb_columns);
+	// console.log('%c realign_columns()', 'background-color:green; color: white');
+	// console.log('', pins.length, '- n. columns', nb_columns);
 
 	// calculate maximum height per row, easy enough
 	pins.each(function(i, e) {
@@ -104,7 +104,7 @@ function realign_columns() {
 				maxh = 0; 
 
 		if(col == 0 && i != 0){ // new row, cloture previous
-			console.log('  - clear elements', col, queue.length, queue);
+			// console.log('  - clear elements', col, queue.length, queue);
 			// calculate maximum and clear
 			maxh = Math.max.apply(this, queue.map(function(d){return d.h}))
 			
@@ -113,7 +113,7 @@ function realign_columns() {
 			}
 			queue = [];
 		}
-		console.log('  ', i, '- n. in col', col, '- height', h, '- title', title);
+		// console.log('  ', i, '- n. in col', col, '- height', h, '- title', title);
 		
 		queue.push({h:h, el:$(e)});
 
