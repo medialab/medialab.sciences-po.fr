@@ -539,7 +539,7 @@ footer
 
 .active_facet, .active-p-enabled
 {
-	background: url(../img/selected.jpg) no-repeat left;
+	color: #000;
 	padding: 0 0 0 15px;
 }
 

@@ -171,6 +171,18 @@ nav#menu
  		}
  	}
 
+a.active-p, a.retired-p{
+ 		color: #757575;
+ 		text-decoration: none;
+ 		.transition(padding, .2s, ease-in-out);
+
+ 		&.active-p-enabled{
+ 			color: @black;
+ 			padding: 0 0 0 15px;
+ 		}
+ 	}
+
+
  	h4{
  		font-size:14px;
  		font-weight: normal;

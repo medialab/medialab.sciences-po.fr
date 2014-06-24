@@ -75,9 +75,10 @@ get_header(); ?>	<!-- Début du header -->
 		/// TRANSLATIONS !
 		$columns = Array(
 			"projets"=>"Projects",
-			"blog"=>"Blog",
+			"publications"=>"Publications",
 			"tools"=>"Tools",
-			"publications"=>"Publications"
+			"blog"=>"Blog"
+			
 		);
 		$n_elements_by_column = 5;
 		foreach( $columns as $key=>$label ) : ?>
