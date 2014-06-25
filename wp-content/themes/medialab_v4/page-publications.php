@@ -14,7 +14,7 @@ get_header(); ?>
 		
 		$args = array( 
 			'post_type' => 'publications', 
-			'orderby' => 'post_modified', 
+			'orderby' => 'date', 
 			'nopaging'=>true,
 			'tax_query' => array( 'relation' => 'OR',
 
@@ -36,8 +36,6 @@ get_header(); ?>
 
 
 		while ( $loop->have_posts() ) : $loop->the_post();
-			//if ($post->date_debut) $time = DateTime::createFromFormat("d/m/y", $post->date_debut)->getTimestamp();
-			//else $time = $post->id;
 
 			/* split the publications_types separate by an blank space, and return it in an array */
 
