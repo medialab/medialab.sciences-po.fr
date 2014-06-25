@@ -14,7 +14,7 @@ get_header(); ?>
 		
 		$args = array( 
 			'post_type' => 'publications', 
-			'orderby' => 'date', 
+			'orderby' => 'post_modified', 
 			'nopaging'=>true,
 			'tax_query' => array( 'relation' => 'OR',
 

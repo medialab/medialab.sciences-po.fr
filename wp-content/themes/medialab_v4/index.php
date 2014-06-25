@@ -93,6 +93,7 @@ get_header(); ?>	<!-- Début du header -->
 							<a href="http://lab.medialab.sciences-po.fr/#<?php echo $tool; ?>"><?php echo $json->name; ?></a>
 						</div>
 					<?php endforeach;
+
 				/* Requête qui va chercher les publications :  */
 				elseif ($key === "publications") :
 					$loop = new WP_Query( array( 'post_type' => 'publications', 'posts_per_page' => -1 ));
@@ -103,7 +104,6 @@ get_header(); ?>	<!-- Début du header -->
 						$publis["$time-$ct"] = '<div class="column-element"><a href="'.get_permalink().'">'.get_the_title().'</a></div>';
 						$ct++;
 					endwhile;
-					krsort($publis);
 					$ct = 0;
 					foreach ($publis as $time => $pub) {
 						echo $pub;
@@ -119,11 +119,6 @@ get_header(); ?>	<!-- Début du header -->
 
 				<div class="column-element">
 					<a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
-					<?php
-					// the_post_thumbnail();
-					// the_excerpt(); 
-					?>
-
 				</div>
 				<?php endwhile; endif;?>
 			</div>
