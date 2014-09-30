@@ -10,7 +10,7 @@ get_header(); ?>
 		
 		<?php 
 		$projects_slugs=array();
-		$loop = new WP_Query( array( 'post_type' => 'projets', 'orderby' => 'rand', 'order' => 'DESC' ) );
+		$loop = new WP_Query( array( 'post_type' => 'projets', 'orderby' => 'rand', 'order' => 'DESC','posts_per_page'=>-1 ) );
 		while ( $loop->have_posts() ) : 
 			$loop->the_post();
 			array_push($projects_slugs,$post->post_name);
@@ -33,7 +33,7 @@ get_header(); ?>
 		<?php endwhile; ?>
 	</div>
 	<div class="sidebar">
-		<h4>Active members</h4>
+		<h4>Active projects</h4>
 		<a class="active-p active-p-enabled">Currently in médialab</a>
 		<a class="retired-p">Previously in médialab</a>
 		<h4>Related people</h4>
@@ -44,7 +44,7 @@ get_header(); ?>
 				'tax_query' => array(
 					array('taxonomy' => 'projets','field' => 'slug','terms' => $projects_slugs,'operator' => 'IN')
 				),
-				 'orderby' => 'name', 'order' => 'ASC' ) );
+				 'orderby' => 'name', 'order' => 'ASC', 'posts_per_page'=>-1 ) );
 			while ( $loop->have_posts() ) : $loop->the_post();?>
 			<a id="<?php echo basename(get_permalink()); ?>" class="facet"><?php the_title(); ?></a>
 			<?php endwhile; ?>
