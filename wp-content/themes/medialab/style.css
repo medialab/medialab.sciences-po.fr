@@ -1,0 +1,498 @@
+/*
+Theme Name: medialab 2.0
+Description: The 2012 theme for the Medialab
+Author: the medialab team
+Version: 1.0
+*/
+
+/*------------ MEDIALAB 2.0 STYLES -----------*/
+/*-------- AUTHOR: Louis-Jérôme LEGER --------*/
+/*- CONTACT: louisjerome.leger@sciences-po.fr */
+
+/*------------ MEDIALAB 2.0 STYLES -----------*/
+/*--------------------------------------------*/
+/*------------------ SUMMARY -----------------*/
+/*--------------------------------------------*/
+/*--------- 1. GENERAL DECLARATIONS ----------*/
+/*--------- 2. HEADER ------------------------*/
+/*--------- 3. GLOBAL CONTAINER --------------*/
+/*--------- 4. NAVIGATION --------------------*/
+/*--------- 5. MAIN DIV ----------------------*/
+/*--------- 6. ZONE EDITO --------------------*/
+/*--------- 7. COLUMNS -----------------------*/
+/*--------- 8. FOOTER ------------------------*/
+
+/*-- CSS STARTING NOW --*/
+
+body
+{
+	background: #F9F9F9;
+	/* text-shadow: rgba(O, O, 0, .01) 0 0 1px; */
+}
+
+body p, body a, body h1, body h2, body h3, body li
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*HEADER*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#head
+{
+	margin: 10px auto 10px auto;
+}
+
+#head a img
+{
+	display: block;
+	width: 217px;
+	float: left;
+}
+
+/*SEARCH FORM*/
+
+#head form
+{
+	display: block;
+	width: 177px;
+	float: right;
+	margin: 10px 0; padding: 0;
+}
+
+input[type="text"]
+{
+	border: none;
+	border-bottom: 1px solid #CCC;
+	background: #F9F9F9 url(img/loupe.png) no-repeat top left;
+	height: 20px;
+	padding: 0 0 0 1.2em;
+}
+
+input[type="submit"]
+{
+	display: none;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*GLOBAL CONTAINER*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#globalcontainer
+{
+	background: #FFF;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.01);
+	-webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.01);
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.01); 
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*NAVIGATION*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+nav ul
+{
+	margin: 10px 0 0 0;
+	height: 30px;
+	text-align: right;
+}
+
+nav  ul li 
+{
+	display: inline-block;
+	vertical-align: top;
+	border-top: 1px solid #CCC;
+	width: 80px;
+	height: 30px;
+	text-align: left;
+	margin: 0 0 0 10px;
+}
+
+nav  ul li:hover
+{
+	border-top: 1px solid #000;
+}
+
+nav  ul li.current-menu-item
+{
+	border-top: 1px solid #000;
+}
+
+nav ul li a
+{
+	font-style: normal;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: lowercase;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul li:hover a, nav ul li.current-menu-item a
+{
+	color: rgba(0, 0, 0, 1);
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*MAIN DIV*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#main
+{
+	margin: 40px 0;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*EDITO*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#edito_zone_1
+{
+	height: 400px;
+}
+
+#edito_zone_2
+{
+	height: 200px;
+	background: #666;
+}
+
+#edito_zone_3
+{
+	height: 180px;
+	background: #777;
+	margin-top: 20px;
+}
+
+#edito_zone_4
+{
+	height: 180px;
+	background: #888;
+	margin-top: 20px;
+}
+
+/*------------------------------------------------------*/
+/*EDITO ZONES // PHOTO AREA */
+/*------------------------------------------------------*/
+
+#edito_zone_1 img, #edito_zone_2 img, #edito_zone_3 img, #edito_zone_4 img
+{
+	/* width: 100%; */
+	filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	height: 100%;
+}
+
+#edito_zone_1 img:hover, #edito_zone_2 img:hover, #edito_zone_3 img:hover, #edito_zone_4 img:hover
+{
+	/* width: 100%; */
+	filter: none;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+}
+
+/*------------------------------------------------------*/
+/*EDITO ZONES // TEXT DECLARATIONS */
+/*------------------------------------------------------*/
+
+#edito_zone_1 h2 a, #edito_zone_2 h2 a, #edito_zone_3 h2 a, #edito_zone_4 h2 a, #edito_zone_1 h3, #edito_zone_2 h3, #edito_zone_3 h3, #edito_zone_4 h3
+{
+	font-weight: bold;
+	color: #000;
+	background: rgba(255, 255, 255, .92);
+	position: relative;
+	z-index: 500;
+	width: 300px;
+	font-size: 18px;
+	line-height: 28px;
+	padding: 3px 10px 3px 5px;
+	text-decoration: none;
+}
+
+#edito_zone_1 h3, #edito_zone_2 h3, #edito_zone_3 h3, #edito_zone_4 h3
+{
+	font-size: 12px;
+	line-height: 16px;
+	width: 200px;
+}
+
+#edito_zone_1 h3, #edito_zone_2 h3
+{
+	width: 280px;
+}
+
+#edito_zone_3 h3, #edito_zone_4 h3
+{
+	font-size: 10px; 
+}
+
+#edito_zone_1 h2
+{
+	margin: -181px 0 10px 0;
+}
+
+#edito_zone_2 h2
+{
+	margin: -130px 0 10px 0;
+}
+
+#edito_zone_3 h2, #edito_zone_4 h2
+{
+	margin: -150px 0 10px 0;
+	font-size: 16px;
+	line-height: 20px;
+	width: 200px;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*COLUMNS*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#columns
+{
+	margin: 50px auto 0 auto;
+}
+
+#tools, #projects, #people, #news
+{
+
+}
+
+#columns h4
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	padding: 0 0 10px 0;
+}
+
+#columns h2 a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding: 0 0 10px 0;
+	font-weight: normal;
+	display: block;
+	margin: 10px 0 0 0; 
+	text-decoration: none;
+	text-align: left;
+}
+
+#columns p, #columns a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: rgba(0, 0, 0, 1);
+	line-height: 14px;
+}
+
+#columns a
+{
+	text-align: right;
+	display: block;
+	padding: 0 0 10px 0;
+}
+
+.column_element
+{
+	width: 100%;
+	border-top: 1px solid #CCC;
+}
+
+.column_element img
+{
+	width: 100%;
+	height: 100px;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*PAGE LISTING OBJECTS*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.column_inside
+{
+	-moz-column-count: 3;
+    -moz-column-gap: 5px;
+    -moz-column-fill: auto;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 5px;
+    -webkit-column-fill: auto;
+    column-count: 3;
+    column-gap: 5px;
+    column-fill: auto;
+}
+
+.column_display
+{
+	width: 206px;
+	-moz-column-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    column-break-inside: avoid;
+    display: inline-block;
+    display: inline-block;
+    margin: 0 2px 10px;
+    padding: 10px;
+}
+
+.column_display h2 a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #000;
+	padding: 0 0 10px 0;
+	display: block;
+}
+
+.column_display p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.column_display img
+{
+	width: 100%;
+	padding: 0 0 10px 0;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*PAGE DISPLAYING A SINGLE OBJECT*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#inside h2 
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #000;
+	padding: 0 0 10px 0;
+	display: block;
+}
+
+#inside p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 13px;
+	text-align: justify;
+}
+
+#inside img
+{
+	float: left;
+	padding: 0 10px 0 0;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*INSIDE TOOL*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#inside_tool img
+{
+	float: left;
+	width: 344px;
+	padding: 0 15px 5px 0;
+}
+
+#inside_tool h1
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #000;
+	display: block;
+	font-weight: bold;
+	padding: 0 0 10px 0;
+}
+
+#inside_tool h2
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #000;
+	display: block;
+	font-weight: bold;
+}
+
+#inside_tool p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 13px;
+	text-align: justify;
+	padding: 10px 0 10px 0;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*FOOTER*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#mainfooter
+{
+	height: 30px;
+	margin: 20px auto 0 auto; padding: 0 0 0 0;
+}
+
+#mainfooter h5
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #999;
+	margin: 0 0 10px 0; padding: 0;
+}
+
+#mainfooter ul li
+{
+	display: block;
+}
+
+#mainfooter ul li a, #mainfooter p, #mainfooter a
+{
+	color: #999;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*MISC PROPERTIES*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*------------------------------------------------------*/
+/*BREADCRUMBS*/
+/*------------------------------------------------------*/
+
+.breadcrumbs, .breadcrumbs a, .breadcrumbs p, .breadcrumbs span
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	color: #000;
+}

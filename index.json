@@ -1,0 +1,8 @@
+{
+  "title": "Medialab tools",
+  "element1": "manylines",
+  "element2": "hyphe",
+  "element3": "sigma",
+  "elements4": ["artoo", "iwanthue", "sciencescape", "heatgraph", "table2net", "gazouilloire", "anta", "pygexf", "issue2navicrawler"],
+  "otherelements": ["navicrawler", "gephi", "refine"]
+}

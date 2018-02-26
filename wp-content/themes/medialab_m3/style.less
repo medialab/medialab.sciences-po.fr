@@ -1,0 +1,147 @@
+@import 'http://medialab-dev.sciences-po.fr/wp-content/themes/medialab_m3/stylesheets/reset.css';
+@import 'http://medialab-dev.sciences-po.fr/wp-content/themes/medialab_m3/stylesheets/demo.css';
+@import './stylesheets/less/grid.less';
+
+
+//////////
+// GRID //
+//////////
+
+// Specify the number of columns and set column and gutter widths
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+// Remove the definition below for a pixel-based layout
+@total-width: 100%;
+
+////////////
+// LAYOUT //
+////////////
+
+// center the contents
+
+div.center 
+{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+// header
+header#top 
+{
+	.column(12);
+	margin-bottom: 1em;
+}
+
+#logo
+{
+	.column(5);
+}
+
+#searchbar
+{
+	.column(7);
+}
+
+// nav & breadcrumbs 
+
+#breadcrumbs 
+{
+	.column(4);
+	margin: 16px 0 16px 20px;
+}
+
+nav#menu 
+{
+	.column(7);
+	.push(1);
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+// zone edito /
+
+#zone-edito
+{
+	.column(12);
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.zone-1
+{
+	.column(6);
+	
+}
+
+.zone-2
+{
+	.column(6);
+	margin-bottom: 10px;
+}
+
+.zone-3
+{
+	.column(3);
+}
+
+.column-title
+{
+	.column(3);
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.column-content
+{
+	.column(3);
+}
+
+// DISPLAY ALL OBJECTS OF A TYPE /
+
+#pin_like
+{
+	.column(9);
+	position: relative;
+}
+
+// SINGLE POST OBJECT /
+
+.single-post
+{
+	.column(9);
+	margin: 0 0 20px 0;
+}
+
+// SEARCH RESULTS /
+
+#pin_like_searched
+{
+	.column(12);
+	position: relative;
+}
+
+.nothing
+{
+	.column(12);
+}
+
+// SIDEBAR /
+
+.sidebar
+{
+	.column(3);
+}
+
+footer
+{
+	.column(12);
+	margin-bottom: 20px;
+}
+
+.f-column
+{
+	.column(3);
+}

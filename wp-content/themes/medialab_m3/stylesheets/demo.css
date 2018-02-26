@@ -1,0 +1,409 @@
+.bg-container
+{
+	background: url(../img/bg-dots.jpg) repeat;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* SEARCHBAR */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#searchbar input
+{
+	float: right;
+	margin: 30px 0;
+	border: none;
+	border-bottom: 1px solid #CCC;
+	background: url(../img/search.jpg) no-repeat 0 5px;
+	padding: 5px 0 3px 20px;
+	color: #CCC;
+	font-style: italic;
+}
+
+#searchbar input[type=submit]
+{
+	display: none;
+}
+
+.nothing
+{
+	position: relative;
+}
+
+.nothing p
+{
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px 0 10px 0;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* RSS ON HOME // BREADCRUMBS ON OTHER PAGES */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#breadcrumbs
+{
+	background: #FFF;
+	padding: 5px 0 10px 0;
+}
+
+#breadcrumbs a
+{
+	text-decoration: none;
+	text-align: center;
+}
+
+#breadcrumbs a:hover span
+{
+	color: #bd3539;
+}
+
+#breadcrumbs img
+{
+	float: left;
+}
+
+#breadcrumbs span
+{
+	font-size: 12px;
+	color: #000;
+	margin: 10px 0 0 30px;
+	display: block;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* NAV */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+nav#menu
+{
+	background: #FFF;
+	padding: 10px 0 5px 0;
+	height: 25px;
+	text-transform : lowercase;
+}
+
+nav#menu ul li
+{
+	display: inline;
+}
+
+nav#menu ul li a
+{
+	font-size: 12px;
+	color: #999;
+	text-decoration: none;
+	border-top: 1px solid #999;
+	margin: 0 5px 0 5px;
+}
+
+nav#menu ul li a:hover
+{
+	color: #000;
+	border-top: 2px solid #bd3539;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* ZONE EDITO */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.zone-1
+{
+	height: 400px;
+}
+
+.zone-2
+{
+	height: 190px;
+}
+
+.zone-3
+{
+	height: 200px;
+}
+
+.zone-1 img
+{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	z-index: 100;
+}
+
+.zone-2 img
+{
+	width: 100%;
+	height: 190px;
+	position: relative;
+	z-index: 100;
+}
+
+.zone-3 img
+{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	z-index: 100;
+}
+
+.zone-1 h2 a, .zone-2 h2 a, .zone-3 h2 a
+{
+	margin: -150px 0 10px 0;
+	font-family: 'Open Sans', sans-serif;
+	background: #FFF;
+	font-size: 16px;
+	color: #bd3539;
+	position: relative;
+	z-index: 200;
+	padding: 5px 0 5px 0;
+	display: block;
+	text-decoration: none;
+}
+
+.zone-1 h2 a:hover, .zone-2 h2 a:hover, .zone-3 h2 a:hover
+{
+	text-decoration: underline;
+}
+
+.zone-1 h3, .zone-2 h3, .zone-3 h3
+{
+	font-family: 'Open Sans', sans-serif;
+	background: #FFF;
+	font-size: 14px;
+	color: #000;
+	position: relative;
+	z-index: 100;
+	padding: 5px 0 5px 0;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* COLUMNS ON HOMEPAGE */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#columns
+{
+	background: url(../img/bg-dots.jpg) repeat;
+}
+
+.column-title 
+{
+	background: #FFF;
+}
+
+.column-title h5
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+.column-content
+{
+	background: #FFF;
+	padding: 0 0 10px 0;
+}
+
+.column-element
+{
+	padding: 10px;
+}
+
+.column-element h3, .column-element h3 a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #000;
+	padding: 5px;
+}
+
+.column-element p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+
+.column-element a
+{
+	color: #bd3539;
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+}
+
+.column-element img
+{
+	width: 100%;
+	height: auto;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* FOOTER */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#footer-transfert
+{
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+.f-column ul li a, .f-column a, .f-column p
+{
+	font-family: 'Open Sans', sans-serif;
+	color: #999;
+	font-size: 12px;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* PAGE DISPLAYING ALL OBJECTS OF A TYPE */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.center h4
+{
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px 0 10px 0;
+}
+
+.column_display
+{
+	padding: 10px;
+	border: 1px dotted #CCC;
+}
+
+.column_display h2 a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #000;
+	padding: 0 0 10px 0;
+	display: block;
+}
+
+.column_display p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.column_display a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #bd3539;
+}
+
+.column_display img
+{
+	width: 100%;
+	height: 150px;
+	padding: 0 0 10px 0;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* SINGLE POST OBJECT */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.single-post h2 a, .single-post h2
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #000;
+	padding: 10px 0 10px 0;
+	display: block;
+}
+
+.single-post h3
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #000;
+	padding: 0 0 10px 0;
+	display: block;
+}
+
+.single-post p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000;
+	padding: 0 0 10px 0;
+	text-align: justify;
+}
+
+.single-post a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #bd3539;
+}
+
+.single-post img
+{
+	width: 450px;
+	float: left;
+	height: auto;
+	padding: 0 10px 5px 0;
+}
+
+.single-post ul 
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	padding: 5px 0 10px 10px;
+}
+
+.single-post ul li
+{
+	padding: 5px 0 5px 0;
+	line-height: 16px;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* SIDEBAR */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.sidebar h4
+{
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px 0 10px 0;
+}
+
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* MISC PROPERTIES */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+nav#menu ul li.current_page_item a
+{
+	color: #000;
+	border-top: 2px solid #bd3539;
+}
+
+strong
+{
+	font-weight: bold;
+}
