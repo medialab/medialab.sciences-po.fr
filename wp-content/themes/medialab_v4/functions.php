@@ -5,6 +5,8 @@
 <?php // ACTIVATES MENUS ?>
 <?php add_action( 'init', 'register_my_menus' );
  
+error_reporting(E_ERROR | E_PARSE);
+
 add_image_size('thumb-zone-1',9999,400);
 add_image_size('thumb-zone-2',9999,190,True);
 add_image_size('thumb-zone-3-4',9999,200);
@@ -181,9 +183,14 @@ function mybread() {
 ?>
 <?php // FUNCTIONS SORT JSON DATAS ?>
 <?php
-	$jsoncontext = stream_context_create(array('http'=>array('timeout' => 8)));
+	
 	function get_tools_short_list($n) {
-		$json = json_decode(file_get_contents("http://tools.medialab.sciences-po.fr/source/index.json", 0, $jsoncontext, null));
+		$jsoncontext = stream_context_create(array('http'=>array('timeout' => 0.1)));
+		$json_file = file_get_contents("http://tools.medialab.sciences-po.fr/source/index.json", 0, $jsoncontext, null);
+		if( $json_file== "")
+			$json_file=file_get_contents("index.json");
+
+		$json = json_decode($json_file);
 		$tools = array();
 		//ksort($json);
 		$ct = 0;
@@ -201,6 +208,7 @@ function mybread() {
 		return $tools;
 	}
 	function get_tool_metas($tool) {
+		$jsoncontext = stream_context_create(array('http'=>array('timeout' => 0.1)));
 		if ($tool) return json_decode(file_get_contents("http://tools.medialab.sciences-po.fr/".$tool."/meta.json", 0, $jsoncontext, null));
 	}
 	function get_json_object($type){
@@ -215,6 +223,7 @@ function mybread() {
 		}
 		$type_url = $type."_id";
 		$object_id = get_post_meta($post->ID, $type_url, true);	
+		$jsoncontext = stream_context_create(array('http'=>array('timeout' => 0.1)));		
 		$metas = json_decode(file_get_contents($url.$object_id."/meta.json", 0, $jsoncontext, null));
 		return $metas;
 	}

@@ -19,17 +19,19 @@ get_header(); ?>
 				<div class="publications"> 
 				<?php
 				
-				$pts=get_terms("publication_types");
+				$pts=get_terms("publications_types");
 				$publication_types_slugs=array();
 				$donepublis = array();
 				foreach($pts as $pt) :
+					
 						$publication_types_slugs[]=$pt->slug;
 						$publications = new WP_Query(array( 
 						'post_type' => 'publications',
 						'tax_query' => array(
 						 	'relation' => 'AND',
 						 	array('taxonomy' => 'people','field' => 'slug','terms' => $user_name),
-						 	array('taxonomy' => 'publication_types','field' => 'slug','terms' => array($pt->slug),"OPERATOR" => 'IN')
+						 	array('taxonomy' => 'publications_types','field' => 'slug','terms' => $pt->slug)
+							//array('taxonomy' => 'publication_types','field' => 'slug','terms' => array($pt->slug),"OPERATOR" => 'IN')
 						)));
 						
 						if ($publications->have_posts()) :
@@ -42,6 +44,7 @@ get_header(); ?>
 							<?php endif;
 							endwhile;
 						endif;
+									
 				endforeach;
 				$others = new WP_Query(array( 
 				'post_type' => 'publications',
@@ -49,7 +52,7 @@ get_header(); ?>
 					'relation' => 'AND',
 					array('taxonomy' => 'people','field' => 'slug','terms' => $user_name ),
 					),
-				'order' => 'ASC' ) );
+				'order' => 'DESC' ) );
 
 				if($others->have_posts()) :
 				

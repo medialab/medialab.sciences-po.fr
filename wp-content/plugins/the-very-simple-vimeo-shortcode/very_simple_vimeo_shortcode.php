@@ -3,7 +3,7 @@
 Plugin Name: Simple Vimeo Shortcode
 Plugin URI: http://www.yourlocalwebmaster.com/plugins/very-simple-vimeo-shortcode-plugin
 Description: A simple shortcode to add your vimeo videos into site! Website are affordable from <a href="http://www.yourlocalwebmaster.com">www.YourLocalWebmaster.com</a>
-Version: 2.0
+Version: 2.9.1
 Author: Grant Kimball
 Author URI: http://www.YourLocalWebmaster.com/
 License: GPL2
@@ -36,7 +36,11 @@ $byline = $atts['byline'];
 else{
 $byline = 0;
 }
-
+if(isset($atts['autoplay'])){
+$auto_play = 'true';
+}else{
+$auto_play = 'false';
+}
 if(isset($atts['portrait'])){
 $portrait = $atts['portrait'];
 }
@@ -56,13 +60,25 @@ $width = "400";
 else{
 $height = "225";
 }
+/*if(isset($atts['badge'])){
+$badge = $atts['badge'];
+}else{
+$badge = 1;
+}*/
+
+if(isset($atts['title']) && ($atts['title'] == FALSE || $atts['title'] == 0 || strtolower($atts['title']) == 'no')){
+	$title = 0;
+}else{
+	$title = 1;	
+}
+
 if(isset($atts['class'])){
 $class=$atts['class'];
 }
 else{
 $class="";
 }
-            $list = '<iframe src="http://player.vimeo.com/video/'.$content.'?byline='.$byline.'&portrait='.$portrait.'" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen class="'.$class.'"></iframe>';
+            $list = '<iframe src="http://player.vimeo.com/video/'.$content.'?byline='.$byline.'&portrait='.$portrait.'&title='.$title.'&autoplay='.$auto_play.'" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen class="'.$class.'"></iframe>';
            return $list;
 }
 

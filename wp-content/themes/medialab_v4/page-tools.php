@@ -10,8 +10,8 @@ get_header(); ?>
 		
 		<?php 
 		$tools_array=array();
-		$tools = get_terms("tools");
-
+		$tools = get_terms("tools",array('hide_empty'=>0));
+		
 		shuffle($tools);
 		foreach ($tools as $tool) {
 			$json = get_tool_metas($tool->name);

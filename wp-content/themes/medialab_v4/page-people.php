@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="container">
 	<div id="content">
 		<?php
-            $query = new WP_Query( array ('post_type' => 'people', 'orderby' => 'rand', 'order' => 'DESC', 'posts_per_page'=>-1 ) ); 
+            $query = new WP_Query( array ('post_type' => 'people', 'orderby' => 'rand', 'order' => 'DESC' , 'posts_per_page'=>-1) ); 
         	$projects_slugs=array();
         	$tools_slugs=array();
         	if($query->have_posts()) : 

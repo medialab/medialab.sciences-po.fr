@@ -68,6 +68,15 @@
 
 	<!-- LESS POUR LE DEV -->
 	<!-- <link rel="stylesheet/less" href="<?php echo get_template_directory_uri(); ?>/style.less" type="text/css" media="screen" /> -->
+	<style>
+		#lang_switch {float:left;margin-top:29px;}
+		.qtranxs_language_chooser {width:150px;display:inline;}
+		.qtranxs_language_chooser a {color:black;font-size:10px;text-decoration:none;}
+.qtranxs_language_chooser .active {font-weight:bold;}
+		.qtranxs_language_chooser li {display:inline}
+		.qtranxs_language_chooser span {display:inline}
+		#searchbar{width:20%;float:right;}
+	</style>
 </head>
 <body>
 <div class="center">
@@ -75,14 +84,18 @@
 	<header id="top">
 
 		<div id="logo">
-			<a href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Science Po | Medialab" /></a>
+			<a href="<?php bloginfo( 'url' ); ?>"><img height="43" src="<?php bloginfo( 'url' ); ?>/wp-content/uploads/2016/04/logo.png" alt="Science Po | Medialab" /></a>
 			
 		</div>
-		
+<div id="lang_switch">
+<?php echo qtranxf_generateLanguageSelectCode('text','id'); ?>
+	</div>	
 		<div id="searchbar">
+
+
 			<?php get_search_form(); ?>
-			<?php echo qtrans_generateLanguageSelectCode('both'); ?>
-		</div>
+</div>
+		
 
 
 	</header>

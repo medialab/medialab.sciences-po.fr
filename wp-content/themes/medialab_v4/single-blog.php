@@ -36,6 +36,10 @@ get_header(); ?>
 		<h4>Related projects</h4>
 			<div class="related-projects-content"><?php the_terms($post->ID, "projets", "", " "); ?></div>
 		</div>
+		<div class="related-publications">
+		<h4>Related publications</h4>
+			<div class="related-publications-content"><?php the_terms($post->ID, "publications", "", " "); ?></div>
+		</div>
 	</div>
 	<div class="clear"></div>
    	<?php comments_template(); ?>

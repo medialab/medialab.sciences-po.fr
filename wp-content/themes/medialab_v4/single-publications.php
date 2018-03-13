@@ -40,7 +40,7 @@ get_header(); ?>
 		</div>
 		<div class="related-tools">
 			<h4>Related tools</h4>
-			<div class="related-tools-content"></div>
+			<div class="related-tools-content"><?php echo_the_tools($pid); ?></div>
 		</div>
 	</div>
 
