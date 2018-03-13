@@ -1,7 +1,5 @@
-.htaccess
 .DS_Store
 node_modules/
-wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/
 wp-content/backup-db/
