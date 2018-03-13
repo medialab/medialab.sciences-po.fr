@@ -4,7 +4,7 @@
 <?php // set_post_thumbnail_size( 220, 146, true );?>
 <?php // ACTIVATES MENUS ?>
 <?php add_action( 'init', 'register_my_menus' );
- 
+
 error_reporting(E_ERROR | E_PARSE);
 
 add_image_size('thumb-zone-1',9999,400);
@@ -25,7 +25,7 @@ function echo_shorten_excerpt($excerpt, $length) {
 }
 function get_shorten_excerpt($excerpt, $length) {
 	if (strlen($excerpt) > $length) {
-		$excerpt = substr($excerpt, 0, $length); 
+		$excerpt = substr($excerpt, 0, $length);
 		$excerpt = preg_replace('/[^\s\.]{2,}$/', '...', $excerpt);
 	}
 	return $excerpt;
@@ -64,7 +64,7 @@ function catch_that_image() {
 }
 ?>
 <?php // INCLUDE ALL POSTS TYPES IN FEED ?>
-<?php 
+<?php
 function myfeed_request($qv) {
 	if (isset($qv['feed']))
 		$qv['post_type'] = get_post_types();
@@ -122,7 +122,7 @@ function myget_category_parents($id, $link = false,$separator = '/',$nicename = 
     else $chain .= $name.$separator;
     return $chain;}
 function mybread() {
-  global $wp_query;$ped=get_query_var('paged');$rendu = '<div xmlns:v="http://rdf.data-vocabulary.org/#">';   
+  global $wp_query;$ped=get_query_var('paged');$rendu = '<div xmlns:v="http://rdf.data-vocabulary.org/#">';
   if ( !is_home() ) {$rendu .= '<span typeof="v:Breadcrumb"><a title="'. get_bloginfo('name') .'" id="breadh" href="'.home_url().'" rel="v:url" property="v:title">'. get_bloginfo('name') .'</a></span>';}
   elseif ( is_home() ) {$rendu .= '<span id="breadex">You are here :</span> <span typeof="v:Breadcrumb">Home of '. get_bloginfo('name') .'</span>';}
   if ( is_category() ) {
@@ -133,14 +133,14 @@ function mybread() {
     elseif ( $ped > 1 ) {
       $rendu .= '<span typeof="v:Breadcrumb"><a href="' . get_category_link( $thisCat ) . '" title="Voir tous les articles de '.single_cat_title("", false).'" rel="v:url" property="v:title">'.single_cat_title("", false).'</a></span>';}}
   elseif ( is_author()){
-    global $author;$user_info = get_userdata($author);$rendu .= " &raquo; Articles de l'auteur ".$user_info->display_name."</span>";}  
+    global $author;$user_info = get_userdata($author);$rendu .= " &raquo; Articles de l'auteur ".$user_info->display_name."</span>";}
   elseif ( is_tag()){
     $tag=single_tag_title("",FALSE);$rendu .= " &raquo; Articles sur le th&egrave;me <span>".$tag."</span>";}
-    elseif ( is_date() ) { 
+    elseif ( is_date() ) {
         if ( is_day() ) {
             global $wp_locale;
             $rendu .= '<span typeof="v:Breadcrumb"><a href="'.get_month_link( get_query_var('year'), get_query_var('monthnum') ).'" rel="v:url" property="v:title">'.$wp_locale->get_month( get_query_var('monthnum') ).' '.get_query_var('year').'</a></span> ';
-            $rendu .= " &raquo; Archives pour ".get_the_date();} 
+            $rendu .= " &raquo; Archives pour ".get_the_date();}
     else if ( is_month() ) {
             $rendu .= " &raquo; Archives pour ".single_month_title(' ',false);}
     else if ( is_year() ) {
@@ -183,10 +183,10 @@ function mybread() {
 ?>
 <?php // FUNCTIONS SORT JSON DATAS ?>
 <?php
-	
+
 	function get_tools_short_list($n) {
 		$jsoncontext = stream_context_create(array('http'=>array('timeout' => 0.1)));
-		$json_file = file_get_contents("http://tools.medialab.sciences-po.fr/source/index.json", 0, $jsoncontext, null);
+		$json_file = file_get_contents("http://tools.medialab.sciences-po.fr/index.json", 0, $jsoncontext, null);
 		if( $json_file== "")
 			$json_file=file_get_contents("index.json");
 
@@ -222,8 +222,8 @@ function mybread() {
 			break;
 		}
 		$type_url = $type."_id";
-		$object_id = get_post_meta($post->ID, $type_url, true);	
-		$jsoncontext = stream_context_create(array('http'=>array('timeout' => 0.1)));		
+		$object_id = get_post_meta($post->ID, $type_url, true);
+		$jsoncontext = stream_context_create(array('http'=>array('timeout' => 0.1)));
 		$metas = json_decode(file_get_contents($url.$object_id."/meta.json", 0, $jsoncontext, null));
 		return $metas;
 	}
@@ -231,7 +231,7 @@ function mybread() {
 		$tools = get_the_terms($pid, "tools");
 		if ($tools) foreach ($tools as $tool) {
 			$json = get_tool_metas($tool->name);
-			if ($json) echo '<a href="http://tools.medialab.sciences-po.fr/#'.$tool->name.'">'.$json->name.'</a>'; 
+			if ($json) echo '<a href="http://tools.medialab.sciences-po.fr/#'.$tool->name.'">'.$json->name.'</a>';
 		}
 	}
 	function get_object_name($metas){
@@ -242,9 +242,9 @@ function mybread() {
 	}
 ?>
 <?php // FUNCTION GET SLUGS OF OBJECTS FOR FACETS ?>
-<?php 
+<?php
 	function get_object_terms($taxo){
-		$terms = get_the_terms($post->id, $taxo); // get an array of all the terms as objects.		
+		$terms = get_the_terms($post->id, $taxo); // get an array of all the terms as objects.
 		if($terms == NULL){
       return "";
     }else {
@@ -258,10 +258,10 @@ function mybread() {
 		}
 	}
 ?>
-<?php 
+<?php
   function get_objects_for_slug($object_type,$slugs_type,$slug){
 
-    $objects = new WP_Query( array( 
+    $objects = new WP_Query( array(
         'post_type' => $object_type,
         #'name' => $people_slugs,
         'tax_query' => array(
@@ -269,16 +269,16 @@ function mybread() {
             ),
          'order' => 'rand' ) );
       $objects_array=array();
-      while ( $objects->have_posts() ) : 
+      while ( $objects->have_posts() ) :
         $objects->next_post();
         $objects_array[]=$objects->post->post_name;
       endwhile;
       $objects_array=array_unique($objects_array);
-    
+
       return implode(" ", $objects_array);
     }
 ?>
-<?php //FUNCTION TO REMOVE P TAG AROUND IMAGES OF THE_CONTENT() 
+<?php //FUNCTION TO REMOVE P TAG AROUND IMAGES OF THE_CONTENT()
  // img unautop
 function img_unautop($pee) {
     $pee = preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<div class="figure">$1</div>', $pee);
@@ -292,7 +292,7 @@ add_filter( 'the_content', 'img_unautop', 30 );
 //    $post = get_post($post_id);
 //   if(!term_exists( $post->post_name, get_post_type($post) )) {
 //     wp_insert_term(
-//     $post->post_name, // the term 
+//     $post->post_name, // the term
 //     get_post_type($post), // the taxonomy
 //     array(
 //       'slug' => $post->post_name
