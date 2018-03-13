@@ -1,0 +1,309 @@
+
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+
+
+ErrorDocument 404   /404.php
+
+
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+# Match the query string variable.
+RewriteCond %{QUERY_STRING} ^(.*&)?page=(.*)(&.*)?$ [NC]
+# Match the file and redirect.
+RewriteRule ^(index\.php)?$ /%2? [NC,R=301,L]
+
+
+
+
+##############################
+########### COURS ############
+##############################
+RewriteRule ^fr/cours   /fr/projets/teaching-controversy-mapping/ [R=301,L]
+RewriteRule ^cours      /fr/projets/teaching-controversy-mapping/ [R=301,L]
+RewriteRule ^courses    /projets/teaching-controversy-mapping/ [R=301,L]
+RewriteRule ^en/courses /projets/teaching-controversy-mapping/ [R=301,L]
+
+####################################
+########### PUBLICATIONS ###########
+####################################
+RewriteRule ^fr/publications-fr/ /fr/publication/ [R=301,L]
+RewriteRule ^en/publications-en/ /publication/ [R=301,L]
+RewriteRule ^publications-fr/ /fr/publication/ [R=301,L]
+RewriteRule ^publications-en/ /publication/ [R=301,L]
+
+################################
+########### STATIC PAGES ###########
+################################
+RewriteRule ^en/about/ /about/ [R=301,L]
+RewriteRule ^fr/a-propos/ /fr/about/ [R=301,L]
+RewriteRule ^ambition /fr/about/ [R=301,L]
+RewriteRule ^ambition-en /about/ [R=301,L]
+RewriteRule ^Pourquoi /fr/about/ [R=301,L]
+RewriteRule ^why /about/ [R=301,L]
+RewriteRule ^program /about/ [R=301,L]
+RewriteRule ^programme /fr/about/ [R=301,L]
+RewriteRule ^users /about/ [R=301,L]
+RewriteRule ^utilisateurs /fr/about/ [R=301,L]
+
+##################################
+########### EVENEMENTS ###########
+##################################
+RewriteRule ^en/events-en/ site_medialab_2009_2013/en/events-en/ [R=301,L]
+RewriteRule ^fr/events/ site_medialab_2009_2013/fr/events/ [R=301,L]
+
+##############################
+########### PROJETS ###########
+##############################
+RewriteRule ^fr/projects/dimeshs /fr/projets/dime-shs/ [R=301,L]
+RewriteRule ^en/projects-en/dimeshs-en /projets/dime-shs/ [R=301,L]
+RewriteRule ^fr/dimeshs /fr/projets/dime-shs/ [R=301,L]
+RewriteRule ^en/dimeshs /projets/dime-shs/ [R=301,L]
+RewriteRule ^dimeshs /fr/projets/dime-shs/ [R=301,L]
+RewriteRule ^dimeshs-en /en/projets/dime-shs/ [R=301,L]
+RewriteRule ^fr/projects/aime /fr/projets/aime/ [R=301,L]
+RewriteRule ^en/projects-en/aime-en /projets/aime/ [R=301,L]
+RewriteRule ^fr/aime /fr/projets/aime/ [R=301,L]
+RewriteRule ^en/aime /projets/aime/ [R=301,L]
+RewriteRule ^aime /fr/projets/aime/ [R=301,L]
+RewriteRule ^aime-en /projets/aime/ [R=301,L]
+
+RewriteRule ^fr/projects/emaps /fr/projets/emaps/ [R=301,L]
+RewriteRule ^en/projects-en/emaps-en /projets/emaps/ [R=301,L]
+RewriteRule ^fr/emaps /fr/projets/emaps/ [R=301,L]
+RewriteRule ^en/emaps /projets/emaps/ [R=301,L]
+RewriteRule ^emaps /fr/projets/emaps/ [R=301,L]
+RewriteRule ^emaps-en /projets/emaps/ [R=301,L]
+
+RewriteRule ^fr/projects/habitele-wearable-digital-identities /fr/projets/habitele-wearable-digital-identities/ [R=301,L]
+RewriteRule ^en/projects-en/habitele-wearable-digital-identities-en /projets/habitele-wearable-digital-identities/ [R=301,L]
+RewriteRule ^fr/habitele-wearable-digital-identities /fr/projets/habitele-wearable-digital-identities/ [R=301,L]
+RewriteRule ^en/habitele-wearable-digital-identities /projets/habitele-wearable-digital-identities/ [R=301,L]
+RewriteRule ^habitele-wearable-digital-identities /fr/projets/habitele-wearable-digital-identities/ [R=301,L]
+RewriteRule ^habitele-wearable-digital-identities-en /projets/habitele-wearable-digital-identities/ [R=301,L]
+
+RewriteRule ^fr/projects/ipinion /fr/projets/ipinion/ [R=301,L]
+RewriteRule ^en/projects-en/ipinion-en /projets/ipinion/ [R=301,L]
+RewriteRule ^fr/ipinion /fr/projets/ipinion/ [R=301,L]
+RewriteRule ^en/ipinion /projets/ipinion/ [R=301,L]
+RewriteRule ^ipinion /fr/projets/ipinion/ [R=301,L]
+RewriteRule ^ipinion-en /projets/ipinion/ [R=301,L]
+
+RewriteRule ^fr/projects/mapping-controversies /fr/projets/macospol/ [R=301,L]
+RewriteRule ^en/projects-en/mapping-controversies-en /projets/macospol/ [R=301,L]
+RewriteRule ^fr/mapping-controversies /fr/projets/macospol/ [R=301,L]
+RewriteRule ^en/mapping-controversies /projets/macospol/ [R=301,L]
+RewriteRule ^mapping-controversies /fr/projets/macospol/ [R=301,L]
+RewriteRule ^mapping-controversies-en /projets/macospol/ [R=301,L]
+
+RewriteRule ^fr/projects/medea /fr/projets/medea/ [R=301,L]
+RewriteRule ^en/projects-en/medea-en /projets/medea/ [R=301,L]
+RewriteRule ^fr/medea /fr/projets/medea/ [R=301,L]
+RewriteRule ^en/medea /projets/medea/ [R=301,L]
+RewriteRule ^medea /fr/projets/medea/ [R=301,L]
+RewriteRule ^medea-en /projets/medea/ [R=301,L]
+
+RewriteRule ^fr/projects/Re-analyse /fr/projets/re-analyse/ [R=301,L]
+RewriteRule ^en/projects-en/Re-analyse-en /projets/re-analyse/ [R=301,L]
+RewriteRule ^fr/Re-analyse /fr/projets/re-analyse/ [R=301,L]
+RewriteRule ^en/Re-analyse /projets/re-analyse/ [R=301,L]
+RewriteRule ^Re-analyse /fr/projets/re-analyse/ [R=301,L]
+RewriteRule ^Re-analyse-en /projets/re-analyse/ [R=301,L]
+
+RewriteRule ^fr/projects/trust /fr/projets/trust/ [R=301,L]
+RewriteRule ^en/projects-en/trust-en /projets/trust/ [R=301,L]
+RewriteRule ^fr/trust /fr/projets/trust/ [R=301,L]
+RewriteRule ^en/trust /projets/trust/ [R=301,L]
+RewriteRule ^trust /fr/projets/trust/ [R=301,L]
+RewriteRule ^trust-en /projets/trust/ [R=301,L]
+
+RewriteRule ^fr/projects/navi-sciento-crawler /tools/ [R=301,L]
+RewriteRule ^en/projects-en/navi-sciento-crawler-en /tools/ [R=301,L]
+RewriteRule ^fr/navi-sciento-crawler /tools/ [R=301,L]
+RewriteRule ^en/navi-sciento-crawler /tools/ [R=301,L]
+RewriteRule ^navi-sciento-crawler /tools/ [R=301,L]
+RewriteRule ^navi-sciento-crawler-en /tools/ [R=301,L]
+
+RewriteRule ^fr/projects/Solen /fr/projets/solen/ [R=301,L]
+RewriteRule ^en/projects-en/Solen-en /projets/solen/ [R=301,L]
+RewriteRule ^fr/Solen /fr/projets/solen/ [R=301,L]
+RewriteRule ^en/Solen /projets/solen/ [R=301,L]
+RewriteRule ^Solen /fr/projets/solen/ [R=301,L]
+RewriteRule ^Solen-en /projets/solen/ [R=301,L]
+
+
+RewriteRule ^en/projects-en/enquete-IEP-en /projets/study-of-the-iep-of-paris/ [R=301,L]
+RewriteRule ^en/enquete-IEP-en /projets/study-of-the-iep-of-paris/ [R=301,L]
+RewriteRule ^enquete-IEP-en /projets/study-of-the-iep-of-paris/ [R=301,L]
+
+
+RewriteRule ^en/projects-en/ /projets/ [R=301,L]
+RewriteRule ^fr/projects/ /fr/projets/ [R=301,L]
+RewriteRule ^projects/ /fr/projets/ [R=301,L]
+RewriteRule ^projects-en/ /projets/ [R=301,L]
+
+
+##############################
+########### EQUIPE ###########
+##############################
+
+RewriteRule ^fr/team/dominique-boullier /fr/people/dominique-boullier/ [R=301,L]
+RewriteRule ^en/team-en/dominique-boullier-en /people/dominique-boullier/ [R=301,L]
+RewriteRule ^fr/dominique-boullier /fr/people/dominique-boullier/ [R=301,L]
+RewriteRule ^en/dominique-boullier /people/dominique-boullier/ [R=301,L]
+RewriteRule ^dominique-boullier /fr/people/dominique-boullier/ [R=301,L]
+RewriteRule ^dominique-boullier-en /people/dominique-boullier/ [R=301,L]
+
+RewriteRule ^fr/team/paul-girard /fr/people/paul-girard/ [R=301,L]
+RewriteRule ^en/team-en/paul-girard-en /people/paul-girard/ [R=301,L]
+RewriteRule ^fr/paul-girard /fr/people/paul-girard/ [R=301,L]
+RewriteRule ^en/paul-girard /people/paul-girard/ [R=301,L]
+RewriteRule ^paul-girard /fr/people/paul-girard/ [R=301,L]
+RewriteRule ^paul-girard-en /people/paul-girard/ [R=301,L]
+
+RewriteRule ^fr/team/tommaso-venturini /fr/people/tommaso-venturini/ [R=301,L]
+RewriteRule ^en/team-en/tommaso-venturini-en /people/tommaso-venturini/ [R=301,L]
+RewriteRule ^fr/tommaso-venturini /fr/people/tommaso-venturini/ [R=301,L]
+RewriteRule ^en/tommaso-venturini /people/tommaso-venturini/ [R=301,L]
+RewriteRule ^tommaso-venturini /fr/people/tommaso-venturini/ [R=301,L]
+RewriteRule ^tommaso-venturini-en /people/tommaso-venturini/ [R=301,L]
+
+RewriteRule ^fr/team/bruno-latour /fr/people/bruno-latour/ [R=301,L]
+RewriteRule ^en/team-en/bruno-latour-en /people/bruno-latour/ [R=301,L]
+RewriteRule ^fr/bruno-latour /fr/people/bruno-latour/ [R=301,L]
+RewriteRule ^en/bruno-latour /people/bruno-latour/ [R=301,L]
+RewriteRule ^bruno-latour /fr/people/bruno-latour/ [R=301,L]
+RewriteRule ^bruno-latour-en /people/bruno-latour/ [R=301,L]
+
+RewriteRule ^fr/team/mathieu-jacomy /fr/people/mathieu-jacomy/ [R=301,L]
+RewriteRule ^en/team-en/mathieu-jacomy-en /people/mathieu-jacomy/ [R=301,L]
+RewriteRule ^fr/mathieu-jacomy /fr/people/mathieu-jacomy/ [R=301,L]
+RewriteRule ^en/mathieu-jacomy /people/mathieu-jacomy/ [R=301,L]
+RewriteRule ^mathieu-jacomy /fr/people/mathieu-jacomy/ [R=301,L]
+RewriteRule ^mathieu-jacomy-en /people/mathieu-jacomy/ [R=301,L]
+
+RewriteRule ^fr/team/andrews-junior-kimbembe /fr/people/andrews-junior-kimbembe/ [R=301,L]
+RewriteRule ^en/team-en/andrews-junior-kimbembe-en /people/andrews-junior-kimbembe/ [R=301,L]
+RewriteRule ^fr/andrews-junior-kimbembe /fr/people/andrews-junior-kimbembe/ [R=301,L]
+RewriteRule ^en/andrews-junior-kimbembe /people/andrews-junior-kimbembe/ [R=301,L]
+RewriteRule ^andrews-junior-kimbembe /fr/people/andrews-junior-kimbembe/ [R=301,L]
+RewriteRule ^andrews-junior-kimbembe-en /people/andrews-junior-kimbembe/ [R=301,L]
+
+RewriteRule ^fr/team/Anne-lhote /fr/people/Anne-lhote/ [R=301,L]
+RewriteRule ^en/team-en/Anne-lhote-en /people/Anne-lhote/ [R=301,L]
+RewriteRule ^fr/Anne-lhote /fr/people/Anne-lhote/ [R=301,L]
+RewriteRule ^en/Anne-lhote /people/Anne-lhote/ [R=301,L]
+RewriteRule ^Anne-lhote /fr/people/Anne-lhote/ [R=301,L]
+RewriteRule ^Anne-lhote-en /people/Anne-lhote/ [R=301,L]
+
+RewriteRule ^fr/team/audrey-lohard /fr/people/audrey-lohard/ [R=301,L]
+RewriteRule ^en/team-en/audrey-lohard-en /people/audrey-lohard/ [R=301,L]
+RewriteRule ^fr/audrey-lohard /fr/people/audrey-lohard/ [R=301,L]
+RewriteRule ^en/audrey-lohard /people/audrey-lohard/ [R=301,L]
+RewriteRule ^audrey-lohard /fr/people/audrey-lohard/ [R=301,L]
+RewriteRule ^audrey-lohard-en /people/audrey-lohard/ [R=301,L]
+
+RewriteRule ^fr/team/daniele-guido-3 /fr/people/daniele-guido/ [R=301,L]
+RewriteRule ^en/team-en/daniele-guido-en /people/daniele-guido/ [R=301,L]
+RewriteRule ^fr/daniele-guido-3 /fr/people/daniele-guido/ [R=301,L]
+RewriteRule ^en/daniele-guido /people/daniele-guido/ [R=301,L]
+RewriteRule ^daniele-guido-3 /fr/people/daniele-guido/ [R=301,L]
+RewriteRule ^daniele-guido-en /people/daniele-guido/ [R=301,L]
+
+RewriteRule ^fr/team/maxime-crepel /fr/people/maxime-crepel/ [R=301,L]
+RewriteRule ^fr/maxime-crepel /fr/people/maxime-crepel/ [R=301,L]
+RewriteRule ^maxime-crepel /fr/people/maxime-crepel/ [R=301,L]
+
+RewriteRule ^fr/team/pierre-jdlf /fr/people/pierre-jullian-de-la-fuente/ [R=301,L]
+RewriteRule ^en/team-en/pierre-jullian-de-la-fuente /people/pierre-jullian-de-la-fuente/ [R=301,L]
+RewriteRule ^fr/pierre-jdlf /fr/people/pierre-jullian-de-la-fuente/ [R=301,L]
+RewriteRule ^en/pierre-jullian-de-la-fuente /people/pierre-jullian-de-la-fuente/ [R=301,L]
+RewriteRule ^pierre-jdlf /fr/people/pierre-jullian-de-la-fuente/ [R=301,L]
+RewriteRule ^pierre-jullian-de-la-fuente /people/pierre-jullian-de-la-fuente/ [R=301,L]
+
+RewriteRule ^en/team-en/ /people/ [R=301,L]
+RewriteRule ^fr/team/ /fr/people/ [R=301,L]
+RewriteRule ^team-en/ /people/ [R=301,L]
+RewriteRule ^team/ /fr/people/ [R=301,L]
+
+###################################
+########### PARTENAIRES ###########
+###################################
+RewriteRule ^en/partners-en/ site_medialab_2009_2013/en/partners-en/ [R=301,L]
+RewriteRule ^fr/partners/ site_medialab_2009_2013/fr/partners/ [R=301,L]
+
+###############################
+########### CONTACT ###########
+###############################
+RewriteRule ^en/contact-en/ /contact/ [R=301,L]
+
+##################################
+########### RESSOURCES ###########
+##################################
+RewriteRule ^fr/ressources/ site_medialab_2009_2013/fr/ressources/ [R=301,L]
+RewriteRule ^en/ressources-en/ site_medialab_2009_2013/en/ressources-en/ [R=301,L]
+
+##############################
+########### controversies ###########
+##############################
+RewriteRule ^controversies/2011/scube/mediator/(.*)$    http://controverses.sciences-po.fr/archive/mediator/$1 [R=301,L]
+RewriteRule ^controversies/2011/scube/plumpynut/(.*)$    http://controverses.sciences-po.fr/archive/plumpynut/$1 [R=301,L]
+RewriteRule ^controversies/2011/scube/bisphenol/(.*)$    http://controverses.sciences-po.fr/archive/bisphenol/$1 [R=301,L]
+RewriteRule ^controversies/2011/scube/bt/(.*)$    http://controverses.sciences-po.fr/archive/bt/$1 [R=301,L]
+RewriteRule ^controversies/2011/scube/decroissance/(.*)$    http://controverses.sciences-po.fr/archive/decroissance/$1 [R=301,L]
+RewriteRule ^controversies/2011/ecole_com/pointg/(.*)$    http://controverses.sciences-po.fr/archive/pointg/$1 [R=301,L]
+RewriteRule ^controversies/2011/ecole_com/nucleaire/(.*)$    http://controverses.sciences-po.fr/archive/nucleaire/$1 [R=301,L]
+RewriteRule ^controversies/2011/ecole_com/pedophilie/(.*)$    http://controverses.sciences-po.fr/archive/pedophilie/$1 [R=301,L]
+RewriteRule ^controversies/2011/ecole_com/licence_globale/(.*)$    http://controverses.sciences-po.fr/archive/licenceglobale/$1 [R=301,L]
+RewriteRule ^controversies/2011/ecole_com/h1n1/(.*)$    http://controverses.sciences-po.fr/archive/h1n1/$1 [R=301,L]
+RewriteRule ^controversies/2011/ecole_com/garde_a_vue/(.*)$    http://controverses.sciences-po.fr/archive/gardeavue/$1 [R=301,L]
+RewriteRule ^controversies/2011/ecole_com/cannabis/(.*)$    http://controverses.sciences-po.fr/archive/cannabis/$1 [R=301,L]
+ 
+RewriteRule ^controversies/2010/FaiblesDoses/(.*)$    http://controverses.sciences-po.fr/archive/faiblesdoses/$1 [R=301,L]
+RewriteRule ^controversies/2010/Copenhague1/(.*)$    http://controverses.sciences-po.fr/archive/fertilisationoceans/$1 [R=301,L]
+RewriteRule ^controversies/2010/Hadopi1/(.*)$    http://controverses.sciences-po.fr/archive/hadopi1/$1 [R=301,L]
+RewriteRule ^controversies/2010/Kilogramme/(.*)$    http://controverses.sciences-po.fr/archive/kilogramme/$1 [R=301,L]
+RewriteRule ^controversies/2010/ModelisationFinance/(.*)$    http://controverses.sciences-po.fr/archive/modelisationfinance/$1 [R=301,L]
+RewriteRule ^controversies/2010/AideDeveloppement/(.*)$    http://controverses.sciences-po.fr/archive/aidedeveloppement/$1 [R=301,L]
+RewriteRule ^controversies/2010/StatistiquesEthniques/(.*)$    http://controverses.sciences-po.fr/archive/statistiquesethniques/$1 [R=301,L]
+RewriteRule ^controversies/2010/Versailles/(.*)$    http://controverses.sciences-po.fr/archive/versailles/$1 [R=301,L]
+RewriteRule ^controversies/2010/MontSaintMichel/(.*)$    http://controverses.sciences-po.fr/archive/montsaintmichel/$1 [R=301,L]
+RewriteRule ^controversies/2010/HypersensibiliteOndes/(.*)$    http://controverses.sciences-po.fr/archive/hypersensibiliteondes/$1 [R=301,L]
+RewriteRule ^controversies/2010/Ampoules/(.*)$    http://controverses.sciences-po.fr/archive/ampoules/$1 [R=301,L]
+
+
+RewriteRule ^controversies/2007/marees_vertes/(.*)$    http://controverses.sciences-po.fr/archive/mareesvertes/$1 [R=301,L]
+RewriteRule ^controversies/2007/electronique/(.*)$    http://controverses.sciences-po.fr/archive/voteelectronique/$1 [R=301,L]
+RewriteRule ^controversies/2007/disparition_mammouths/(.*)$    http://controverses.sciences-po.fr/archive/disparitionmammouths/$1  [R=301,L]
+RewriteRule ^controversies/2007/implants_cochleaires/(.*)$    http://controverses.sciences-po.fr/archive/implantscochleaires/$1 [R=301,L]
+
+
+RewriteRule ^controversies/guided_tour/(.*)$    http://jiminy.medialab.sciences-po.fr/labs/guidedtour/$1 [R=301,L]
+RewriteRule ^controversies/(.*)$ http://controverses.sciences-po.fr/ [R=301,L]
+
+##############################
+########### AUTRES ###########
+##############################
+#RewriteRule ^picasa(.*)$ http://medialab.sciences-po.fr/ [R=301,L]
+#RewriteRule ^medialab-chain(.*)$ http://medialab.sciences-po.fr/ [R=301,L]
+
+##################################
+########### WORDPRESS ###########
+##################################
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+

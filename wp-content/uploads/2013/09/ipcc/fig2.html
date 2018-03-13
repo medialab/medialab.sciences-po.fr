@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Document sans nom</title>
+
+
+<link type="text/css" rel="stylesheet" media="all" href="js/tilezoom/jquery.tilezoom.css" />
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/tilezoom/jquery.tilezoom.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#container').tilezoom('destroy');
+    $('#container').tilezoom({
+        xml: 'dest/fig2.xml',
+        mousewheel: true,
+		navigation: true,
+		toggleFull: false,
+	    zoomIn: false,
+		zoomOut: false, 
+		offset: '1%'
+    });
+});
+</script>
+
+
+	<style type="text/css">
+		html, body {
+			padding: 0;
+			margin: 0;
+		}
+		#container {
+			background-color: white;
+			border: 1px solid black;
+			color: black;   /* for error messages, etc. */
+			overflow: hidden;
+			position: absolute;
+	        width: 938px;
+            height: 500px;
+			margin: 0 auto;
+		}
+		
+		#content div.form-item {
+			width: 100%;
+			overflow: hidden;
+			padding: 0.2em 0;
+		}
+	</style>
+
+</head>
+
+<body>
+
+				<div id="container">
+				</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37695848-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type =
+'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Document sans nom</title>
+
+
+<link type="text/css" rel="stylesheet" media="all" href="js/tilezoom/jquery.tilezoom.css" />
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/tilezoom/jquery.tilezoom.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#container').tilezoom({
+        width: 1200,
+        height: 1342,
+        path: 'dest/IPCC_flux2_files',
+        mousewheel: true
+    });
+});
+</script>
+
+
+	<style type="text/css">
+		html, body {
+			padding: 0;
+			margin: 0;
+		}
+		#container {
+			background-color: black;
+			border: 1px solid black;
+			color: white;   /* for error messages, etc. */
+			overflow: hidden;
+			position: relative;
+			width: 940px;
+			height: 700px;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+<h1>test</h1>
+
+
+				<div id="container">
+					<div class="zoom-holder">
+	
+					</div>
+				</div>
+
+
+
+
+
+</body>
+</html>
