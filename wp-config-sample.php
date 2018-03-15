@@ -18,6 +18,16 @@
  * @package WordPress
  */
 
+#define('WP_DEBUG', true);
+#define('SCRIPT_DEBUG', true);
+
+#if ( ! empty( $_SERVER['HTTP_X_FORWARDED_HOST'] ) ) {
+#    $_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
+#}
+#$_SERVER['HTTPS'] = 'on';
+#define('WP_HOME','https://medialab.sciences-po.fr/');
+#define('WP_SITEURL','https://medialab.sciences-po.fr/');
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'database_name_here');
@@ -64,6 +74,16 @@ define('NONCE_SALT',       'put your unique phrase here');
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix  = 'wp_';
+
+/**
+ * WordPress Localized Language, defaults to English.
+ *
+ * Change this to localize WordPress. A corresponding MO file for the chosen
+ * language must be installed to wp-content/languages. For example, install
+ * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
+ * language support.
+ */
+define('WPLANG', '');
 
 /**
  * For developers: WordPress debugging mode.
