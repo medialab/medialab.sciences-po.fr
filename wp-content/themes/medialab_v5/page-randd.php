@@ -6,6 +6,13 @@
 
 get_header(); ?>	
 <div class="container">
+	<?php $locale = get_locale() ?>
+  <?php $in_english = $locale == 'en_US' ?>
+  <h2 class="row-main-title">
+      <span class="title-text">
+        <?php echo $in_english ? 'News' : 'Actualités' ?>
+      </span>
+  </h2>
 	<div id="content">
 		
 		<?php 
@@ -20,13 +27,17 @@ get_header(); ?>
         $people_slugs=array_merge($people_slugs,explode(" ",get_object_terms('people')));
         ?>
 	
-		<div class="column_display blog <?php echo get_object_terms('projets'); ?> 
+		<div class="column_display blog item-card-container <?php echo get_object_terms('projets'); ?> 
 				<?php echo get_object_terms('tools');?> <?php echo get_object_terms('people');?>">
 		
 			
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-			<p><?php echo_shorten_excerpt(get_the_excerpt(), 140); ?></p>
+			<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<div class="img-container">
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+			</div>
+			<div class="excerpt">
+				<p><?php echo_shorten_excerpt(get_the_excerpt(), 140); ?></p>
+			</div>	
 			
 		</div>
 		

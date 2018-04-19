@@ -924,11 +924,6 @@ ul.qtrans_language_chooser li .qtrans_flag_and_text span {
     height: unset;
 }
 
-.container .blog {
-    margin: 0 15px 10px 5px;
-    border-bottom: 1px solid #d4d4d4;
-    padding-bottom: 14px
-}
 
 .container .publications img {
     height: 190px;
