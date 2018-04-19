@@ -1,0 +1,740 @@
+body
+{
+	background: #F9F9F9 url(img/bg.jpg) repeat;
+	margin: 0; padding: 0;
+	font-family: 'Open Sans', serif;
+}
+
+.center
+{
+	margin: 0 auto;
+	background: #FFF;
+}
+
+header#top
+{
+	background: #FFF;
+	padding: 20px 5px 20px 5px;
+}
+
+#searchbar input
+{
+	border: none;
+	border-bottom: 1px solid #CCC;
+	background: #F9F9F9 url(img/search.png) no-repeat 0 5px;
+	padding: 7px 0 3px 20px;
+	color: #666;
+	font-style: italic;
+	float: right;
+}
+
+#searchbar input[type=submit]
+{
+	display: none;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*NAVIGATION*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.nav_container
+{
+	background: #FFF;
+	padding: 20px 5px 10px 5px;
+}
+
+#rss a
+{
+	text-decoration: none;
+}
+
+#rss span
+{
+	color: #CC021A;
+	font-size: 12px;
+	display: block;
+	margin: -14px 0 0 20px;
+}
+
+#rss span:hover
+{
+	text-decoration: underline;
+}
+
+nav#menu ul
+{
+	margin: 5px 0 0 0;
+	height: 30px;
+	text-align: right;
+}
+
+nav#menu ul li 
+{
+	display: inline-block;
+	vertical-align: top;
+	border-top: 1px solid #CCC;
+	width: 80px;
+	height: 30px;
+	text-align: left;
+	margin: 0 0 0 10px;
+}
+
+nav#menu ul li:hover
+{
+	border-top: 3px solid #CC021A;
+}
+
+nav#menu ul li.current-menu-item
+{
+	border-top: 3px solid #CC021A;
+}
+
+nav#menu ul li a
+{
+	display: block;
+	font-style: normal;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: lowercase;
+	padding: 5px 0 0 0;
+	color: #000;
+}
+
+nav#menu ul li:hover a, nav#menu ul li.current-menu-item a
+{
+	color: rgba(0, 0, 0, 1);
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* ZONE EDITO */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#zone-edito
+{
+	background: #FFF;
+	padding: 20px 5px 40px 5px;
+}
+
+.zone-1
+{
+	height: 400px;
+}
+
+.zone-2
+{
+	height: 190px;
+}
+
+.zone-3
+{
+	height: 200px;
+}
+
+.zone-1 img
+{
+	width: 100%;
+	position: relative;
+	z-index: 100;
+	border: 1px solid #CCC;
+}
+
+.zone-2 img
+{
+	width: 100%;
+	position: relative;
+	z-index: 100;
+	border: 1px solid #CCC;
+}
+
+.zone-3 img
+{
+	width: 100%;
+	position: relative;
+	z-index: 100;
+	border: 1px solid #CCC;
+}
+
+.edito-title 
+{
+	position: absolute;
+	z-index: 200;
+}
+
+.important
+{
+	height: 405px;
+	margin: -405px 0;
+}
+
+.less-important
+{
+	height: 203px;
+	margin: -203px 0;
+}
+
+.edito-title h2 a
+{
+	background: #FFF;
+	font-weight: bold;
+	color: #c70e16;
+	line-height: 24px;
+	font-size: 20px;
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	text-decoration: none;
+	margin: 20px 0;
+}
+
+.edito-title h2 a:hover
+{
+	text-decoration: underline;
+}
+
+.zone-1 h2 a
+{
+	width: 250px;
+	margin: 2px 1px;
+}
+
+.zone-2 h2 a
+{
+	width: 350px;
+	margin: 10px 1px;
+}
+
+.zone-3 h2 a
+{
+	width: 200px;
+	margin: 0px 1px;
+}
+
+.edito-title h3
+{
+	padding: 5px;
+	background: #FFF;
+	position: absolute;
+	bottom: 2px;
+	font-weight: bold;
+	color: #000;
+	line-height: 16px;
+	font-size: 12px;
+} 
+
+.zone-1 h3
+{
+	width: 350px;
+	margin: 1px;
+}
+
+.zone-2 h3
+{
+	width: 350px;
+	margin: 1px;
+}
+
+.zone-3 h3
+{
+	width: 200px;
+	margin: 1px;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* HOMEPAGE COLUMNS */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.columns-container
+{
+	background: #FFF;
+	padding: 10px 5px 30px 5px;
+}
+
+.column-content
+{
+	background: #FFF;
+	padding: 0 0 10px 0;
+}
+
+.column-content h5 a
+{
+	color: #CC021A;
+	display: block;
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 16px;
+	padding: 0 0 5px 0; 
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+
+.column-element
+{
+	padding: 10px 10px 20px 0;
+}
+
+.column-element h3, .column-element h3 a
+{
+	font-family: 'Open Sans', serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+	font-weight: bold;
+}
+
+.column-element p
+{
+	font-family: 'Open Sans', serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #000;
+}
+
+.column-element a
+{
+	color: #c70e16;
+	float: right;
+	font-family: 'Open Sans', serif;
+	font-size: 10px;
+}
+
+.column-element img
+{
+	width: 100%;
+	height: auto;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* PAGE DISPLAYING ALL OBJECTS OF A TYPE */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.container
+{
+	font-family: 'Open Sans', serif;
+	font-size: 12px;
+	background: #FFF;
+	display: block;
+	width: 100%;
+}
+
+.page-container{
+	padding: 20px 10px;
+	margin: 0;
+}
+
+.page-container img{
+	float: left;
+	padding: 10px 0;
+}
+
+.page-content h2{
+	font-family: 'Open Sans', serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+.page-content ul{
+	padding: 0 0 0 20px;
+}
+
+.page-content ul li{
+
+	line-height: 20px;
+	list-style-type: circle;
+	text-align: justify;
+}
+
+.post-thumbnail img{
+	width: 100%;
+	height: auto;
+}
+
+.container h2 a, .container h2
+{
+	font-family: 'Open Sans', serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000;
+}
+
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* SINGLE POST OBJECT */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.single-post{
+	padding: 0 10px;
+	margin: 12px 0px 20px 5px;
+}
+
+.single-post h1 a, .single-post h1
+{
+	font-family: 'Open Sans', serif;
+	font-size: 18px;
+	color: #000;
+	padding: 10px 0 10px 0;
+	display: block;
+	font-weight: bold;
+}
+
+.single-post h2 a, .single-post h2
+{
+	font-family: 'Open Sans', serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000;
+	padding: 2px 0 2px 0;
+	display: block;
+}
+
+.single-post h3
+{
+	font-family: 'Open Sans', serif;
+	font-size: 18px;
+	color: #000;
+	padding: 0 0 10px 0;
+	display: block;
+}
+
+#reply-title
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.single-post p
+{
+	font-family: 'Open Sans', serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000;
+	padding: 0 0 10px 0;
+	text-align: justify;
+}
+
+.single-post a
+{
+	font-family: 'Open Sans', serif;
+	font-size: 12px;
+	color: #CC021A;
+}
+
+.single-post img
+{
+	max-width: 690px;
+	display: block;
+	max-height: 200px;
+	margin: 10px 0 10px 0;
+}
+
+
+.single-post iframe
+{
+	max-width: 690px;
+	display: block;
+	min-height: 400px;
+	margin: 10px 0 10px 0;
+}
+
+.single-post ul 
+{
+	font-family: 'Open Sans', serif;
+	font-size: 12px;
+	padding: 5px 0 10px 10px;
+}
+
+.single-post ul li
+{
+	padding: 5px 0 5px 0;
+	line-height: 16px;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* SIDEBAR */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.sidebar h4
+{
+	font-size: 18px;
+	font-family: 'Open Sans', serif;
+	padding: 10px 0 10px 0;
+	font-weight: bold;
+}
+
+.sidebar h5
+{
+	font-size: 12px;
+	font-family: 'Open Sans', serif;
+	color: #c70e16;
+	font-style: italic;
+	padding: 0 0 10px 0;
+}
+
+.sidebar a
+{
+	color: #000;
+	display: block;
+	line-height: 20px;
+	font-size: 12px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.sidebar a.reset
+{
+	font-family: 'Open Sans', serif;
+	font-size: 14px;
+	color: #CC021A;
+	font-weight: bold;
+	padding: 0 0 10px 0;
+}
+
+.sidebar-inside
+{
+	width: 90%;
+	padding: 0 10px 20px 0 ;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* FOOTER */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+footer
+{
+	background: #FFF;
+	border-top: 1px dotted #CCC;
+	padding: 30px 0px;
+}
+
+.f-column ul li a, .f-column a, .f-column p
+{
+	font-family: 'Open Sans', serif;
+	color: #999;
+	font-size: 12px;
+}
+
+#f-menu{
+	text-align: center;
+}
+
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/* MISC */
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+.figure{
+	font-family: 'Open Sans', serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: black;
+	text-align: justify;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+ul.qtrans_language_chooser
+{
+	padding: 10px 0;
+}
+
+ul.qtrans_language_chooser li
+{
+	display: inline;
+}
+
+ul.qtrans_language_chooser li a
+{
+	text-decoration: none;
+	font-style: normal;
+}
+
+ul.qtrans_language_chooser li a span
+{
+	font-size: 1px;
+	color: #FFF;
+}
+
+#vimeoplayer_subtitles{text-align: center;}
+
+/* ////////////////////////////////
+///////////////////////////////////
+MEDIA QUERIES 768px (TABLETS)
+///////////////////////////////////
+//////////////////////////////// */
+
+@media (max-width: 768px) 
+{
+
+.edito-title h2 a
+{
+	background: #FFF;
+	font-weight: bold;
+	color: #c70e16;
+	line-height: 20px;
+	font-size: 16px;
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	text-decoration: none;
+	margin: 20px 0;
+}
+
+.edito-title h2 a:hover
+{
+	text-decoration: underline;
+}
+
+.zone-1 h2 a
+{
+	width: 250px;
+}
+
+.zone-2 h2 a
+{
+	width: 350px;
+}
+
+.zone-3 h2 a
+{
+	width: 150px;
+}
+
+.edito-title h3
+{
+	padding: 5px;
+	background: #FFF;
+	position: absolute;
+	bottom: 0;
+	font-weight: bold;
+	color: #000;
+	line-height: 16px;
+	font-size: 12px;
+} 
+
+.zone-1 h3
+{
+	width: 350px;
+}
+
+.zone-2 h3
+{
+	width: 350px;
+}
+
+.zone-3 h3
+{
+	width: 150px;
+}
+
+footer img
+{
+	width: 100%;
+}
+
+}
+
+/* ////////////////////////////////
+///////////////////////////////////
+MEDIA QUERIES 320px (PHONE)
+///////////////////////////////////
+//////////////////////////////// */
+
+@media (max-width: 320px) 
+{
+
+#searchbar input
+{
+	border: none;
+	border-bottom: 1px solid #CCC;
+	background: #F4F4F4 url(img/search.png) no-repeat 0 5px;
+	padding: 7px 0 3px 20px;
+	color: #CCC;
+	font-style: italic;
+	float: left;
+}
+
+nav
+{
+	height: 130px;
+}
+
+nav#menu ul
+{
+	margin: 5px 0 0 0;
+	height: 30px;
+	text-align: left;
+}
+
+nav#menu ul li 
+{
+	display: inline-block;
+	vertical-align: top;
+	border-top: 1px solid #CCC;
+	width: 80px;
+	height: 50px;
+	text-align: left;
+	margin: 0 0 0 10px;
+}
+
+nav#menu ul li:hover
+{
+	border-top: 3px solid #CC021A;
+}
+
+nav#menu ul li.current-menu-item
+{
+	border-top: 3px solid #CC021A;
+}
+
+nav#menu ul li a
+{
+	font-style: normal;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: lowercase;
+	color: #000;
+}
+
+nav#menu ul li:hover a, nav#menu ul li.current-menu-item a
+{
+	color: rgba(0, 0, 0, 1);
+}
+
+.single-post img
+{
+	padding-bottom: 10px;
+}
+
+.f-column
+{
+	padding: 10px 0 10px 0;
+}
+
+.f-column img
+{
+	width: 50%;
+}
+
+}
