@@ -32,12 +32,12 @@ get_header(); ?>
 		echo get_objects_for_slug('publications','tools',$tool); php?>">
 			<h2 class="title"><a href="<?php echo $url; ?>"><?php echo $json->name; ?></a></h2>
 			<?php if (isset($json->visual) && ($json->visual != "")) : ?>
-			<div class="img-container">
+			<!--<div class="img-container">
 				<a href="<?php echo $url; ?>">
-					<!--<img src="<?php echo preg_replace("/tools\.medialab/", "lab.medialab", preg_replace("/^\//", "http://tools.medialab.sciences-po.fr/", $json->visual)); ?>" alt="<?php echo $tool->name; ?>" title="<?php echo $tool->name; ?>" />-->
+					
 						<img src="<?php echo preg_replace("/^\//", "http://tools.medialab.sciences-po.fr/", $json->visual); ?>" alt="<?php echo $tool->name; ?>" title="<?php echo $tool->name; ?>" /></a>
 				</a>
-			</div>
+			</div>-->
 
 
 			<?php endif; ?>
