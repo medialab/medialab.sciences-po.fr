@@ -231,9 +231,13 @@ nav#menu ul li a,
     text-decoration: none;
     text-transform: lowercase;
     padding: 5px 0 0;
-    color: #000;
+    /*color: #000;*/
     text-transform: uppercase!important;
-    color: lightgrey;
+    color: darkgrey;
+}
+
+#lang_switch .language-chooser li{
+    margin-left: 0.5rem;
 }
 
 nav#menu ul li:hover a,
@@ -241,7 +245,7 @@ nav#menu ul li.current-menu-item a,
 #lang_switch .language-chooser:hover a,
 #lang_switch .language-chooser .active a {
     color: #000;
-    color: darkgrey;
+    color: #333;
 }
 
 #zone-edito {
@@ -1253,7 +1257,7 @@ footer .allungato .f-column {
 #news-container #list-container .labo-life {}
 
 #news-container #list-container .news-card {
-    padding: .5rem;
+    padding: 2rem;
     transition: all .5s ease;
     flex: 1;
     display: flex;
@@ -1361,7 +1365,7 @@ footer .allungato .f-column {
     bottom: 1rem;
     width: 50%;
     min-height: 20%;
-    max-height: 50%;
+    max-height: calc(100% - 2rem);
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
@@ -1369,6 +1373,7 @@ footer .allungato .f-column {
     pointer-events: none;
     background: #E6142D;
     padding: 2rem;
+    overflow: hidden;
 }
 
 #news-container #hero-news .content-container h2 {
@@ -1385,6 +1390,7 @@ footer .allungato .f-column {
     color: white;
     margin: 0;
     text-transform: uppercase;
+    padding-left: 0;
 }
 
 
@@ -1473,6 +1479,7 @@ footer .allungato .f-column {
     margin-left: 1rem;
     padding-left: 0;
     margin-bottom: .1rem;
+    overflow: hidden;
 }
 
 .item-card-container .img-container {
@@ -1610,6 +1617,10 @@ footer .footer-row .menu-item {
 .column_display.tools {
     width: 31%!important;
     height: 20rem!important;
+}
+
+.column_display.publications{
+    height: 18rem!important;
 }
 
 .column_display.projets,
