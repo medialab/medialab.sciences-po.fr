@@ -58,7 +58,7 @@ get_header(); ?>
 			/* Built the html div that will be display on the page */
 						$el = '<div class="column_display publications item-card-container '.get_object_terms('projets').' '.get_object_terms('people').' '.get_object_terms('publications_types').'">
 			<h2 class="title"><a href="'.get_permalink($post->id).'">'.$post->post_title.'</a></h2>
-			<h3 class="subtitle facet do-not-enlighten hide" data-target="'.get_object_terms('publications_types').'"><a href="#" title="">'.implode($terms, ',').'</a></h3><div class="img_publi img-container"><a href=" '.get_permalink($post->id).'">'.get_the_post_thumbnail().'</a></div><div class="excerpt"><p>'.get_shorten_excerpt(get_the_excerpt(), 140).'</p>
+			<h3 class="subtitle facet do-not-enlighten hide" data-target="'.get_object_terms('publications_types').'"><a href="#" title="">'.implode($terms, ',').'</a></h3><div class="img_publi img-container"><!--<a href=" '.get_permalink($post->id).'">'.get_the_post_thumbnail().'</a>--></div><div class="excerpt"><p>'.get_shorten_excerpt(get_the_excerpt(), 140).'</p>
 				'.($remote_url?'<a href="'.$remote_url.'">'.$remote_url.'</a>':'').'
 
 				</div>
@@ -113,7 +113,7 @@ get_header(); ?>
 
 	<div class="sidebar" id="sidebar_publi">
 		<h4>
-      <?php echo $in_english ? 'Publication types': 'Types de pbulications' ?>      
+      <?php echo $in_english ? 'Publication types': 'Types de publications' ?>      
 		</h4>
 		<h5>
       <?php echo $in_english ? 'Filter by publication type': 'Filtrer par type de publication' ?>      
