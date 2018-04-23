@@ -207,7 +207,7 @@ nav#menu ul li {
     vertical-align: top;
     text-align: left;
     margin: 0 0 0 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
     font-family: Inconsolata;
     border-bottom: 3px solid white;
@@ -602,7 +602,7 @@ header#top {
 #logo {
     display: inline;
     float: left;
-    width: 48%;
+    width: 50%;
     margin: 0 .52083333%
 }
 
@@ -977,7 +977,7 @@ ul.qtrans_language_chooser li .qtrans_flag_and_text span {
     line-height: 25px;
     font-size: 16px;
     padding: 8px 15px;
-    margin: 15px 10px 2px;
+    /*margin: 15px 10px 2px;*/
     font-weight: 400
 }
 
@@ -1176,6 +1176,7 @@ footer .allungato .f-column {
 .row-main-title {
     margin: 1.5rem!important;
     margin-left: 0!important;
+    margin-bottom: 1rem!important;
     background: transparent!important;
     padding: 0!important;
     padding-bottom: 10px!important;
@@ -1464,6 +1465,7 @@ footer .allungato .f-column {
     padding: 1rem;
     margin-left: 0!important;
     margin-bottom: 0!important;
+    margin-top: 0!important;
     font-size: 1.1rem;
     line-height: 1.3rem;
 }
