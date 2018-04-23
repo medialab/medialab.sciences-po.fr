@@ -81,11 +81,15 @@ get_header(); ?>
 
 	<div class="sidebar">
 		<div class="related-projects">
-			<h4>Related projects</h4>
+			<h4>
+				<?php echo $in_english ? 'Related projects' : 'Projets liés' ?>
+			</h4>
 			<div class="related-projects-content"><?php the_terms( $pid, 'projets','',''); ?></div>
 		</div>
 		<div class="related-tools">
-			<h4>Related tools</h4>
+			<h4>
+				<?php echo $in_english ? 'Related tools' : 'Outils liés' ?>
+			</h4>
 			<div class="related-tools-content"><?php echo_the_tools($pid); ?></div>
 		</div>
 		

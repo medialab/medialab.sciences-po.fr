@@ -49,8 +49,12 @@ get_header(); ?>
 		<?php } ?>
 	</div>
 	<div class="sidebar">
-		<h4>Related people</h4>
-		<h5>Click on a name to see who works with a tool</h5>
+		<h4>
+      <?php echo $in_english ? 'Related people': 'Personnes liées' ?>      
+		</h4>
+		<h5>
+      <?php echo $in_english ? 'Click on a person to see which tools she is working on': 'Cliquer sur une personne pour voir sur quels outils elle travaille' ?>      
+		</h5>
 		<div class="sidebar-inside">
 			<?php $loop = new WP_Query( array( 
 				'post_type' => 'people',

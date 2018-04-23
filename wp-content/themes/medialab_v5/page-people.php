@@ -48,11 +48,21 @@ get_header(); ?>
         <?php endwhile; endif; ?>
 	</div>
 	<div class="sidebar">
-		<h4>Active members</h4>
-		<a class="active-p active-p-enabled">Currently in médialab</a>
-		<a class="retired-p">Previously in médialab</a>
-		<h4>Related projects</h4>
-		<h5>Click on a project to see who is on it</h5>
+		<h4>
+      <?php echo $in_english ? 'Active members': 'Membres actifs' ?>  
+    </h4>
+		<a class="active-p active-p-enabled">
+      <?php echo $in_english ? 'Currently in médialab': 'Actuellement au médialab' ?>  
+    </a>
+		<a class="retired-p">
+      <?php echo $in_english ? 'Previously in médialab': 'Précédemment au médialab' ?>    
+    </a>
+		<h4>
+      <?php echo $in_english ? 'Related projects': 'Projets liés' ?>    
+    </h4>
+		<h5>
+      <?php echo $in_english ? 'Click on a project to see related team members': 'Cliquer sur un projet pour afficher les membres de l\'équipe qui y travaillent' ?>    
+    </h5>
 		<div class="sidebar-inside">
 			<?php 
 				$projects_slugs=array_unique($projects_slugs);
@@ -69,8 +79,12 @@ get_header(); ?>
 			endif;
 			endwhile; ?>
 		</div>
-		<h4>Related tools</h4>
-		<h5>Click on a tool to see who is on it</h5>
+		<h4>
+      <?php echo $in_english ? 'Related tools': 'Outils liés' ?>      
+    </h4>
+		<h5>
+      <?php echo $in_english ? 'Click on a tool to see related team members': 'Cliquer sur un outil pour afficher les membres de l\'équipe qui y travaillent' ?>    
+    </h5>
 		<div class="sidebar-inside">
 			<?php 
 				$tools_slugs=array_unique($tools_slugs);

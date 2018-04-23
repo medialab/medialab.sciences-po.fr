@@ -10,7 +10,7 @@ get_header(); ?>
 	<?php $in_english = $locale == 'en_US' ?>
 	<h2 class="row-main-title">
 			<span class="title-text">
-				<?php echo $in_english ? 'Projets' : 'Projects' ?>
+				<?php echo $in_english ? 'Projects' : 'Projets' ?>
 			</span>
 	</h2>
 	<div id="content">
@@ -61,11 +61,21 @@ get_header(); ?>
 		<?php endwhile; ?>
 	</div>
 	<div class="sidebar">
-		<h4>Active projects</h4>
-		<a class="active-p active-p-enabled">Currently in médialab</a>
-		<a class="retired-p">Previously in médialab</a>
-		<h4>Related people</h4>
-		<h5>Click on a person to see who is working on what</h5>
+		<h4>
+      <?php echo $in_english ? 'Active projects': 'Projets actifs' ?>    
+		</h4>
+		<a class="active-p active-p-enabled">
+      <?php echo $in_english ? 'Currently in médialab': 'Actuellement au médialab' ?>    
+		</a>
+		<a class="retired-p">
+      <?php echo $in_english ? 'Previously in médialab': 'Précédemment au médialab' ?>    
+		</a>
+		<h4>
+      <?php echo $in_english ? 'Related persons': 'Personnes liées' ?>    
+		</h4>
+		<h5>
+      <?php echo $in_english ? 'Click on a person to see related team members': 'Cliquer sur une personne pour afficher les membres de l\'équipe qui y travaillent' ?>    
+		</h5>
 		<div class="sidebar-inside"><?php
 			$loop = new WP_Query( array( 
 				'post_type' => 'people',

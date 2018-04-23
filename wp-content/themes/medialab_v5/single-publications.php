@@ -45,11 +45,15 @@ get_header(); ?>
 
 	<div class="sidebar">
 		<div class="related-people">
-			<h4>Author<?php if (count(get_the_terms( $post->ID, 'people')) > 1) echo "s"; ?></h4>
+			<h4>
+				<?php echo $in_english ? 'Authors' : 'Auteurs' ?>
+				<?php if (count(get_the_terms( $post->ID, 'people')) > 1) echo "s"; ?></h4>
 				<div class="related-people-content"><?php the_terms( $post->ID, 'people','',' ',''); ?></div>
 		</div>
 		<div class="related-tools">
-			<h4>Related tools</h4>
+			<h4>
+				<?php echo $in_english ? 'Related tools' : 'Outils liés' ?>
+			</h4>
 			<div class="related-tools-content"><?php echo_the_tools($pid); ?></div>
 		</div>
 	</div>

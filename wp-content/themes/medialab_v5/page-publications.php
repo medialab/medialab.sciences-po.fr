@@ -112,8 +112,12 @@ get_header(); ?>
 
 
 	<div class="sidebar" id="sidebar_publi">
-		<h4>Publications types</h4>
-		<h5>filter by publication types</h5>
+		<h4>
+      <?php echo $in_english ? 'Publication types': 'Types de pbulications' ?>      
+		</h4>
+		<h5>
+      <?php echo $in_english ? 'Filter by publication type': 'Filtrer par type de publication' ?>      
+		</h5>
 		<div class="sidebar-inside">
 			<?php 
 				$publication_type_slugs=array_unique($publication_type_slugs);
@@ -126,8 +130,12 @@ get_header(); ?>
 			<?php
 			endforeach; ?>
 		</div>
-		<h4>Authors</h4>
-		<h5>filter by authors</h5>
+		<h4>
+      <?php echo $in_english ? 'Authors': 'Auteurs' ?>     
+		</h4>
+		<h5>
+      <?php echo $in_english ? 'Filter by author': 'Filtrer par auteur' ?>      
+		</h5>
 		<div class="sidebar-inside">
 			<?php 
 				$people_slugs=array_unique($people_slugs);
@@ -144,8 +152,12 @@ get_header(); ?>
 			endif;
 			endwhile; ?>
 		</div>
-		<h4>Related projects</h4>
-		<h5>filter by projects</h5>
+		<h4>
+      <?php echo $in_english ? 'Related projects': 'Projets liés' ?>      
+		</h4>
+		<h5>
+      <?php echo $in_english ? 'Filter by project': 'Filtrer par projet' ?>      
+		</h5>
 		<div class="sidebar-inside">
 			<?php 
 				$projects_slugs=array_unique($projects_slugs);
@@ -164,5 +176,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-<div id="warning">Warning : The following texts are made available for private academic use only. Published papers are presented here in their pre-print version. Important differences may exist between this version and the final published one. Always report to the authors and publishers for any other use.</div>
+<div id="warning">
+  <?php echo $in_english ? 'Warning : The following texts are made available for private academic use only. Published papers are presented here in their pre-print version. Important differences may exist between this version and the final published one. Always report to the authors and publishers for any other use.': 'Avertissement : les textes suivants sont rendus disponibles pour un usage universitaire et privé uniquement. Les textes publiés sont présentés ici dans leur version pre-print : il pourrait exister des différences importantes entre cette version et la version publiée. Il est impératif de revenir vers les auteurs et éditeurs pour un quelconque autre usage.' ?>      
+</div>
 <?php get_footer(); ?>

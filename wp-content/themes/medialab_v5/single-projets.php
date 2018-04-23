@@ -62,7 +62,9 @@ get_header(); ?>
 	<div class="sidebar">
 		
 		<div class="related-people">
-			<h4>Related people</h4>
+			<h4>
+				<?php echo $in_english ? 'Related people' : 'Personnes liées' ?>
+			</h4>
 				<div class="related-people-content"><?php
 				$loop = new WP_Query(array( 
 					'post_type' => 'people',
@@ -75,7 +77,9 @@ get_header(); ?>
 				endwhile; ?></div>
 		</div>
 		<div class="related-publications">
-			<h4>Related publications</h4>
+			<h4>
+				<?php echo $in_english ? 'Related publications' : 'Publications liées' ?>
+			</h4>
 				<div class="related-publications-content"><?php
 				$loop = new WP_Query(array( 
 					'post_type' => 'publications',
@@ -88,7 +92,9 @@ get_header(); ?>
 				endwhile; ?></div>
 		</div>
 		<div class="related-tools">
-			<h4>Related tools</h4>
+			<h4>
+				<?php echo $in_english ? 'Related tools' : 'Outils liés' ?>
+			</h4>
 			<div class="related-tools-content"><?php echo_the_tools($truc); ?></div>
 		</div>
 	</div>

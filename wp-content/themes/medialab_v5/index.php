@@ -17,7 +17,6 @@ get_header(); ?>	<!-- Début du header -->
 	<?php $locale = get_locale() ?>
 	<?php $in_english = $locale == 'en_US' ?>
 	<div id="manifesto"> <!-- Début de la zone de Une -->
-		<!-- Début nouvelle structure robin amélie -->
 
 		<!-- rangée 1 -->
 		<h2 class="row-main-title">
@@ -35,9 +34,6 @@ get_header(); ?>	<!-- Début du header -->
 				</div>
 
 				<ul id="list-container">
-				<!-- <h3 class="labo-life">
-					Actualités
-				</h3> -->
 					<?php 
 					query_posts( array('post_type' => array( 'blog', 'projets', 'publications'), 'category_name' => 'une', 'showposts' => 5 ));
 						while ( have_posts() ) : the_post(); 
@@ -131,74 +127,7 @@ get_header(); ?>	<!-- Début du header -->
 		</div>
 		<!-- fin rangée 2 -->
 
-		<!-- Fin nouvelle structure robin amélie -->
-
 		<div style="clear:both"></div>
 
 	</div> <!-- Fin de la zone de Une -->
-	
-
-<!--	<div class="columns-container"> <!-- div des colonnes "Projets", "Blog", "Tools", "Publications" -->
-
-<!--		<?php
-		/**
-		/// TRANSLATIONS !
-		$columns = Array(
-			"projets"=>"Projects",
-			"publications"=>"Publications",
-			"tools"=>"Tools",
-			"blog"=>"Blog"
-			
-		);
-		$n_elements_by_column = 5;
-		foreach( $columns as $key=>$label ) : ?>
-			<div class="column-content">
-				<h2><a href="<?php echo get_site_url()."/".$key; ?>/"><?php echo $label ?></a></h2>
-				<!--Requête qui va chercher les outils :  -->
-				<?php if ($key === "tools") :
-					foreach (get_tools_short_list($n_elements_by_column) as $tool) : 
-						$json = get_tool_metas($tool);
-						if (!$json) continue; ?>
-						<div class="column-element">
-							<a href="http://lab.medialab.sciences-po.fr/#<?php echo $tool; ?>"><?php echo $json->name; ?></a>
-						</div>
-					<?php endforeach;
-
-				/* Requête qui va chercher les publications :  */
-/**				elseif ($key === "publications") :
-					$loop = new WP_Query( array( 'post_type' => 'publications', 'posts_per_page' => -1 ));
-					$ct = 0;
-					while ( $loop->have_posts() ) : $loop->the_post();
-						if ($post->date_debut) $time = DateTime::createFromFormat("d/m/y", $post->date_debut)->getTimestamp();
-						else $time = $post->id;
-						$publis["$time-$ct"] = '<div class="column-element"><a href="'.get_permalink().'">'.get_the_title().'</a></div>';
-						$ct++;
-					endwhile;
-					$ct = 0;
-					foreach ($publis as $time => $pub) {
-						echo $pub;
-						$ct++;
-						if ($ct > 4) break;
-					}
-				
-				else :
-				$args = array( 'post_type' => $key, 'posts_per_page' => $n_elements_by_column );
-				
-				$loop = new WP_Query( $args );
-				while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-				<div class="column-element">
-					<a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
-				</div>
-				<?php endwhile; endif;?>
-			</div>
-			<?php
-
-		endforeach;
-
-*/
-		?>
-		
-	</div> -->
-
 <?php get_footer(); ?>

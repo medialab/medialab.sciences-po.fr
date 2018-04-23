@@ -9,6 +9,8 @@
 
 get_header(); ?>
 <div class="container">
+	<?php $locale = get_locale() ?>
+	<?php $in_english = $locale == 'en_US' ?>
 	<div class="single-post">
 	<?php  the_post(); ?>
 		
@@ -25,19 +27,27 @@ get_header(); ?>
 	</div>
 	<div class="sidebar">
 		<div class="related-people">
-			<h4>Related people</h4>
+			<h4>
+				<?php echo $in_english ? 'Related people' : 'Personnes liées' ?>
+			</h4>
 			<div class="related-people-content"><?php the_terms($post->ID, "people", "", " "); ?></div>
 		</div>
 		<div class="related-tools">
-			<h4>Related tools</h4>
+			<h4>
+				<?php echo $in_english ? 'Related tools' : 'Outils liés' ?>
+			</h4>
 			<div class="related-tools-content"><?php the_terms($post->ID, "tools", "", " "); ?></div>
 		</div>
 		<div class="related-projects">
-		<h4>Related projects</h4>
+		<h4>
+				<?php echo $in_english ? 'Related projects' : 'Projets liés' ?>
+		</h4>
 			<div class="related-projects-content"><?php the_terms($post->ID, "projets", "", " "); ?></div>
 		</div>
 		<div class="related-publications">
-		<h4>Related publications</h4>
+		<h4>
+				<?php echo $in_english ? 'Related publications' : 'Publications liées' ?>
+		</h4>
 			<div class="related-publications-content"><?php the_terms($post->ID, "publications", "", " "); ?></div>
 		</div>
 	</div>

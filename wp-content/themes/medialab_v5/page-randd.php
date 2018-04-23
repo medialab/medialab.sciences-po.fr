@@ -44,8 +44,13 @@ get_header(); ?>
 		<?php endwhile; ?>
 	</div>
 		<div class="sidebar">
-		<h4>Related People</h4>
-		<h5>Team members concerned by the blog posts</h5>
+		<h4>
+      <?php echo $in_english ? 'Related people': 'Personnes liées' ?>      
+			
+		</h4>
+		<h5>
+      <?php echo $in_english ? 'Team members concerned by the News': 'Membres de l\'équipe concernés par les actualités' ?>      
+		</h5>
 		<div class="sidebar-inside">
 			<?php 
 				$people_slugs=array_unique($people_slugs);
@@ -62,8 +67,12 @@ get_header(); ?>
 			endif;
 			endwhile; ?>
 		</div>
-		<h4>Related projects</h4>
-		<h5>Click on a project to see who is on it</h5>
+		<h4>
+      <?php echo $in_english ? 'Related projects': 'Projets liés' ?>      
+		</h4>
+		<h5>
+      <?php echo $in_english ? 'Click on a project to see related news': 'Cliquer sur un projet pour voir les actualités qui s\'y rapportent' ?>      
+		</h5>
 		<div class="sidebar-inside">
 			<?php 
 				$projects_slugs=array_unique($projects_slugs);
@@ -80,8 +89,12 @@ get_header(); ?>
 			endif;
 			endwhile; ?>
 		</div>
-		<h4>Related tools</h4>
-		<h5>Click on a tool to see who is on it</h5>
+		<h4>
+      <?php echo $in_english ? 'Related tools': 'Outils liés' ?>      
+		</h4>
+		<h5>
+      <?php echo $in_english ? 'Click on a tool to see related news': 'Cliquer sur un outil pour voir les actualités qui s\'y rapportent' ?>      
+		</h5>
 		<div class="sidebar-inside">
 			<?php 
 				$tools_slugs=array_unique($tools_slugs);
