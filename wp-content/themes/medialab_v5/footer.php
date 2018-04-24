@@ -31,16 +31,17 @@
         <?php /*wp_nav_menu('footer-menu');*/ ?>
         <ul class="menu">
           <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/credits">
+              <?php print $in_english ? 'Credits' : 'Crédits' ?>
+            </a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
             <a href="/contact">
               <?php print $in_english ? 'Contact' : 'Contact' ?>
             </a>
           </li>
 
-          <li class="menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/credits">
-              <?php print $in_english ? 'Credits' : 'Crédits' ?>
-            </a>
-          </li>
+          
         </ul>
       </nav>
 
@@ -56,6 +57,9 @@
         </a>
         <a href="http://www.medialab.sciences-po.fr/feed/">
           <img  src="<?php echo get_template_directory_uri(); ?>/img/rss.png" alt="Flux RSS du médialab"/>
+        </a>
+        <a href="https://twitter.com/medialab_ScPo">
+          <img  src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="Compte twitter du médialab"/>
         </a>
       </div>
     </div>

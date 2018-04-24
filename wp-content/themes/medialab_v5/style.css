@@ -199,7 +199,7 @@ nav#menu ul {
     flex-flow: row wrap;
     align-items: flex-end;
     justify-content: flex-end;
-    padding-right: 1rem;
+    /*padding-right: 1rem;*/
 }
 
 nav#menu ul li {
@@ -602,7 +602,7 @@ header#top {
 #logo {
     display: inline;
     float: left;
-    width: 50%;
+    width: 60%;
     margin: 0 .52083333%
 }
 
@@ -616,6 +616,7 @@ header #submenu {
     align-content: stretch;
     justify-content: flex-end;
     padding: 1rem;
+    padding-right: 0;
 }
 
 
@@ -1209,7 +1210,7 @@ footer .allungato .f-column {
 }
 
 .herow {
-    height: 50vh;
+    height: 60vh;
 }
 
 #news-container {
@@ -1277,13 +1278,14 @@ footer .allungato .f-column {
 }
 
 #news-container #list-container .news-card h2 {
-    font-size: .8rem;
+    font-size: .9rem;
     line-height: 1rem;
 }
 
 #news-container #list-container .news-card h3 {
-    font-size: .5rem;
+    font-size: .7rem;
     text-transform: uppercase;
+    margin-bottom: .1rem;
 }
 
 #news-container #list-container .news-card a {
@@ -1380,7 +1382,8 @@ footer .allungato .f-column {
 #news-container #hero-news .content-container h2 {
     pointer-events: all;
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
     padding-left: 0;
     padding-top: 0;
     color: white;
@@ -1562,14 +1565,15 @@ footer {
 
 footer .medialab-info {
     float: right;
-    font-size: 12px;
+    /*font-size: 12px;
     padding-right: 15px;
     height: 40px;
-    line-height: 40px
+    line-height: 40px*/
 }
 
 footer .medialab-info a {
     text-decoration: none;
+    margin-left: .5rem;
 }
 
 footer .medialab-licenses {
@@ -1602,6 +1606,10 @@ footer .footer-row {
     justify-content: stretch;
     align-items: stretch;
     margin-top: 1rem;
+}
+
+footer .footer-row #logo img{
+    height: 3rem!important;
 }
 
 footer .footer-row .menu-item {
@@ -1639,8 +1647,13 @@ footer .footer-row .menu-item {
     margin-right: 0;
 }
 
-
 @media (max-width: 1000px) {
+    div.center {
+        width: 700px;
+    }
+}
+
+@media (max-width: 800px) {
 
     div.center {
         width: 100%;
@@ -1649,6 +1662,7 @@ footer .footer-row .menu-item {
         flex-direction: column;
         padding: 1rem;
     }
+
 
     header#top,
     #news-container,
@@ -1675,6 +1689,10 @@ footer .footer-row .menu-item {
         flex-direction: column;
         width: 100%;
         padding: 0;
+    }
+
+    #lang_switch .language-chooser li:first-of-type{
+        margin-left: 0;
     }
     #searchbar form>div,
     #searchbar {
@@ -1731,6 +1749,11 @@ footer .footer-row .menu-item {
         margin-left: 1rem!important;
         margin-right: 1rem!important;
     }
+
+    .herow {
+        height: auto;
+    }
+
     /**
      * Projets
      */
@@ -1760,5 +1783,17 @@ footer .footer-row .menu-item {
     footer .medialab-adresse {
         width: 100%;
         height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .item-card-container{
+        width: 100%;
+    }
+    .item-card-container .title,
+    .item-card-container .subtitle,
+    .item-card-container .excerpt,
+    .item-card-container .more{
+        margin-right: 0;
     }
 }
