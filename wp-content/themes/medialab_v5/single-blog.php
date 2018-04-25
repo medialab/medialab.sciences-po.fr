@@ -11,10 +11,17 @@ get_header(); ?>
 <div class="container">
 	<?php $locale = get_locale() ?>
 	<?php $in_english = $locale == 'en_US' ?>
+	<h2 class="row-main-title">
+			<span class="title-text">
+				<?php the_title(); ?>
+			</span>
+			<a href="/blog">
+				<?php echo $in_english ? 'Go back to the news...' : 'Retour aux actualités' ?>
+			</a>
+	</h2>
 	<div class="single-post">
 	<?php  the_post(); ?>
 		
-		<h2><?php the_title(); ?></h2>
 		<div style="width:100%;clear:both;align:center;">
 			<?php $video = get_post_meta($post->ID, 'vimeo_id', true);
 				 if (!$video) the_post_thumbnail("s_post");
