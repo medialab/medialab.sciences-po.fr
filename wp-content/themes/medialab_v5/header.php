@@ -81,27 +81,32 @@
 	<header id="top">
 
 		<div id="logo">
-			<a href="<?php bloginfo( 'url' ); ?>"><img height="43" src="<?php bloginfo( 'url' ); ?>/wp-content/uploads/2016/04/logo.png" alt="Science Po | Medialab" /></a>
-		</div>
-		
-		<div class="header-column">
-			<div class="header-row">
-				<div class="nav-container">
+			<div id="logo-row">
+				<a href="<?php bloginfo( 'url' ); ?>"><img height="43" src="<?php bloginfo( 'url' ); ?>/wp-content/uploads/2016/04/logo.png" alt="Science Po | Medialab" /></a>
+				<div id="lang_switch">
+					<?php echo qtranxf_generateLanguageSelectCode('text','id'); ?>
+				</div>	
+			</div>
+
+			<div class="nav-container">
 					<!-- Main navigation -->
 					<nav id="menu">
 						<?php wp_nav_menu('primary-menu');?>
 					</nav>
 				</div>
+		</div>
+		
+		<!-- <div class="header-column"> -->
+			<!-- <div class="header-row">
+				
 			</div>
 			<div class="header-row" id="submenu">
 				<div id="searchbar">
 						<button id="searchbar-toggle"><img src="<?php echo get_template_directory_uri(); ?>/img/search.png" alt="Search"></img></button>
 						<?php get_search_form(); ?>
-				</div>
-				<div id="lang_switch">
-					<?php echo qtranxf_generateLanguageSelectCode('text','id'); ?>
-				</div>	
-			</div>
-		</div>
+				</div> -->
+				
+			<!-- </div> -->
+		<!-- </div> -->
 		
 	</header>
