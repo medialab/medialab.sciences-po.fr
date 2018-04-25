@@ -206,9 +206,9 @@ nav#menu ul li {
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    margin: 0 0 0 10px;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    margin: 0 0 0 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
     font-family: Inconsolata;
     border-bottom: 3px solid white;
     transition: all .5s ease;
@@ -234,10 +234,16 @@ nav#menu ul li a,
     /*color: #000;*/
     text-transform: uppercase!important;
     color: darkgrey;
+    font-size: 1rem!important;
 }
 
 #lang_switch .language-chooser li{
     margin-left: 0.5rem;
+}
+
+#lang_switch .language-chooser a span{
+    font-size: .8rem!important;
+
 }
 
 nav#menu ul li:hover a,
@@ -602,12 +608,12 @@ header#top {
 #logo {
     display: inline;
     float: left;
-    width: 60%;
-    margin: 0 .52083333%
+    width: 100%;
+    /*margin: 0 .52083333%*/
 }
 
 #logo img {
-    height: 3.5rem!important;
+    height: 2.5rem!important;
 }
 
 header #submenu {
@@ -660,7 +666,8 @@ header #submenu {
     display: flex;
     flex-flow: row nowrap;
     align-content: stretch;
-    justify-content: stretch;
+    justify-content: flex-end;
+    margin-top: 1rem;
 }
 
 .nav_container {
@@ -798,8 +805,8 @@ nav#menu {
 .sidebar h5 {
     color: #757575;
     border-bottom: 1px solid #757575;
-    margin-bottom: 10px;
-    padding-bottom: 15px
+    margin-bottom: .3rem;
+    padding-bottom: .3rem;
 }
 
 footer {
@@ -818,6 +825,8 @@ footer {
 header#top {
     width: 100%;
     margin: 0;
+    margin-top: 2rem;
+
     padding: 0;
     display: block;
     clear: both;
@@ -831,6 +840,14 @@ header#top #logo {
     float: left;
     margin: 0 .52083333%;
     margin: 0
+    display: flex;
+}
+
+header#top #logo-row{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 header#top #logo a {
@@ -1487,6 +1504,10 @@ footer .allungato .f-column {
     overflow: hidden;
 }
 
+.item-card-container .excerpt p{
+    margin-top: 0;
+}
+
 .item-card-container .img-container {
     width: calc(100% - 2rem);
     max-height: 25rem;
@@ -1588,6 +1609,8 @@ footer .medialab-adresse {
     float: left;
     width: 50%;
     padding: .5rem;
+    padding-left: 0;
+    padding-top: 0;
     font-size: .8rem;
     flex: 1;
 }
@@ -1609,7 +1632,7 @@ footer .footer-row {
 }
 
 footer .footer-row #logo img{
-    height: 3rem!important;
+    height: 2rem!important;
 }
 
 footer .footer-row .menu-item {
@@ -1645,6 +1668,119 @@ footer .footer-row .menu-item {
 .projets .more {
     margin-left: 0;
     margin-right: 0;
+}
+
+.single-post h2{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.1rem;
+}
+.single-post h3{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+.sidebar div:not(:first-of-type){
+    margin-top: 1rem;
+}
+
+#comments{
+    border-top: 1px solid lightgrey;
+    margin-top: 1rem;
+}
+
+#comments p:not(.comment-notes){
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    margin-bottom : 1rem;
+}
+
+#comments textarea,
+#comments input
+{
+    padding: .5rem;
+    font-family: 'Inconsolata';
+    transition: all .5s ease;
+    border: 1px solid lightgrey;
+    outline: none;
+}
+
+#comments textarea:focus,
+#comments textarea:hover,
+#comments input:hover,
+#comments input:hover
+{
+    background: rgba(0,0,0,0.2);
+}
+
+#comments textarea{
+    min-height: 10rem;
+    width: 100%;    
+}
+#comments label{
+    padding-right: 1rem;
+}
+#comments input
+{
+    flex: 1;
+}
+
+#comments .comment {
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+#comments .commentlist > .comment{
+    padding-left: 0;
+}
+
+#comments article{
+    border: 1px solid rgba(0,0,0,0.1);    
+}
+
+#comments .comment header{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: stretch;
+    padding-bottom: .5rem;
+}
+
+#comments .comment header img,
+#comments .comment header cite,
+#comments .comment header > a{
+    margin-right: 1rem;
+}
+
+#comments .comment header cite{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+#comments .comment header cite span{
+ font-size: .9rem;
+    font-style: italic;
+    color: lightgrey;   
+}
+
+#comments .comment header cite span:before{
+    content: ' - ';
+}
+
+#comments .comment header > a{
+    font-size: .7rem;
+    font-style: italic;
+    color: lightgrey;
+}
+
+
+#comments .comment header img{
+    border-radius: 50%;
+}
+
+#comments #respond{
+    border-top: 1px solid lightgrey;
 }
 
 @media (max-width: 1000px) {
