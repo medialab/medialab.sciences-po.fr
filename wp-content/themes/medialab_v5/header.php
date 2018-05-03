@@ -34,12 +34,12 @@
 	wp_title( '|', true, 'right' );
 
 	// Add the blog name.
-	bloginfo( 'name' );
+	//bloginfo( 'name' );
 
 	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
+	//$site_description = get_bloginfo( 'description', 'display' );
+	//if ( $site_description && ( is_home() || is_front_page() ) )
+	//	echo " | $site_description";
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
@@ -52,9 +52,9 @@
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'> -- >
 	
 	<!--TYPOGRAPHIE BITTER -->
-	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
 	<!--TYPOGRAPHIE INCONSOLATA -->
-	<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Inconsolata:400,700,400italic' rel='stylesheet' type='text/css'>
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.8.js" type="text/javascript"></script>
     <!-- Scripts -->
