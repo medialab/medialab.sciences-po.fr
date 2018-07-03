@@ -478,12 +478,17 @@ nav#menu ul li.current-menu-item a,
 .single-post ul {
     font-family: 'Open Sans', serif;
     font-size: 12px;
-    padding: 5px 0 10px 10px
+    padding: 5px 0 10px 10px;
+    list-style: inside;
+}
+
+.single-post ol{
+    list-style: auto;
 }
 
 .single-post ul li {
     padding: 5px 0;
-    line-height: 16px
+    line-height: 16px;
 }
 
 .sidebar h4 {
@@ -1228,6 +1233,8 @@ footer .allungato .f-column {
 
 .herow {
     height: 60vh;
+    max-height: 25rem;  
+    min-height: 20rem;  
 }
 
 #news-container {
