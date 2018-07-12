@@ -25,7 +25,7 @@ get_header(); ?>
 				<?php  $user_name=$post->post_name; 
 				?>
 				
-				<div class="publications"> 
+				<!--<div class="publications"> 
 				<?php
 				
 				$pts=get_terms("publications_types");
@@ -75,7 +75,7 @@ get_header(); ?>
 					<?php endif;
 					endwhile;
 				endif; ?>
-				</div>
+				</div>-->
 			
 	</div>
 
