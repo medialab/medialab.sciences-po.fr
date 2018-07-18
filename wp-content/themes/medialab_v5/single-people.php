@@ -92,6 +92,30 @@ get_header(); ?>
 			</h4>
 			<div class="related-tools-content"><?php echo_the_tools($pid); ?></div>
 		</div>
+
+		<div class="publications">
+				<?php
+					$pt = "journal-articles";
+					$publications = new WP_Query(array( 
+						'post_type' => 'publications',
+						'tax_query' => array(
+						 	'relation' => 'OR',
+						 	array('taxonomy' => 'people','field' => 'slug','terms' => $user_name)
+						)));
+					if ($publications->have_posts()) :
+							?>
+							<h4>
+								<?php echo $in_english ? 'Publications' : 'Publications' ?>
+							</h4>
+							<?php
+							while($publications->have_posts()) :
+								$publications->next_post(); ?>
+								<a style="margin-bottom: .5em" href="<?php echo get_permalink($publications->post->ID); ?>" > 
+											<?php echo $publications->post->post_title; ?>
+										</a>
+					<?php endwhile; endif;
+				?>
+		</div>
 		
 	</div>
 	
